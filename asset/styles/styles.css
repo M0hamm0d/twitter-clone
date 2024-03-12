@@ -1,0 +1,184 @@
+.side-nav{
+    height: 100vh;
+    overflow: auto;
+    padding: 0px 8px;
+    scrollbar-color: rgb(185, 202, 211) rgb(247, 249, 249);
+}
+.home-post img{
+    padding: 12px;
+}
+.my-profile{
+    padding: 12px;
+}
+.post{
+    margin: 16px 0px;
+}
+.tweet-container{
+    border-right: 1px solid rgba(239, 243, 244, 1.00);
+}
+.tweet-navigation{
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.tweet-nav{
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    flex: 1;
+}
+.tweet-nav:hover{
+    background-color: #e4e5e8;
+}
+.timelime-settings{
+    flex: .2;
+    display: flex;
+    justify-content: baseline;
+}
+.timelime-setting{
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+}
+.timelime-setting img{
+    width: 24px;
+    height: 24px;
+}
+.timelime-setting:hover{
+    border-radius: 50%;
+    background-color: #e4e5e8;
+}
+.tweeting-section{
+    padding: 0 16px 0;
+    border-bottom: 1px solid rgba(239, 243, 244, 1.00);
+}
+.my-profile-pics{
+    margin-right: 8px;
+}
+.what-is-happening{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    width: 100%;
+    border: 0px;
+    outline: 0px;
+}
+textarea{
+    width: 100%;
+    border: 0px;
+    outline: 0px;
+}
+.what-is-happening button{
+    border-radius: 30px;
+    padding: 3px 10px 5px;
+}
+.post-others img{
+    color: rgb(29, 155, 240);
+    padding: 9px;
+}
+.tweet-section{
+    padding: 16px 16px 0;
+    border-bottom: 1px solid rgba(239, 243, 244, 1.00);
+}
+.ramadan-kareem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.reaction-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    align-items: center;
+}
+.reaction-section{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.reactions{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.reactions>*:first-child{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.reactions>*:not(:first-child){
+    padding: 0 0px 0 25px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.reactions img{
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    z-index: 1;
+}
+.reactions img:hover{
+    background-color: beige ;
+    color: beige;
+    border-radius: 50%;
+}
+.share-bookmart-section{
+    display: flex;
+}
+.share-bookmart-section > div{
+    padding: 9px;
+}
+.reactions span{
+    z-index: 2;
+}
+.search-section{
+    background-color: #fff;
+    top: 0px;
+    position: sticky;
+    z-index: 1020;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.search-box{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #eff3f4;
+}
+.search-icon{
+    display: flex;
+    align-items: center;
+}
+.search-box img{
+    color: rgba(83, 100, 113, 1.00);
+    padding:0px 0px 0px 12px;
+}
+.search-space{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.search-space input{
+    display: flex;
+    align-items: center;
+    padding: 0px 12px 3px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.00);
+}
