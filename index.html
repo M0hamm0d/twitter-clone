@@ -9,8 +9,8 @@
     <title>Home/X</title>
 </head>
 <body>
-    <div class="container d-flex">
-        <div class="col-1 sticky-top side-nav d-flex flex-column justify-content-between">
+    <div class="wrapper">
+        <div class="col-1 sticky-top side-nav flex-column justify-content-between">
             <div class="d-flex flex-column">
                 <div class="mt-2 d-flex justify-content-center">
                     <div class="logo-cover">
@@ -81,9 +81,9 @@
             </div>
         </div>
         <!-- justify-content-between -->
-        <div class="d-flex justify-content-between">
-            <div class="tweet-container d-flex col-7">
-                <div class="d-flex flex-column col-12">
+        <div class="tweet-and-trend-container d-flex justify-content-between">
+            <div class="tweet-container d-flex">
+                <div class="d-flex flex-column">
                     <div class="tweet-navigation sticky-top ">
                         <div class="tweet-nav">For you</div>
                         <div class="tweet-nav">Following</div>
@@ -93,36 +93,41 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tweeting-section d-flex col-12">
+                    <div class="tweeting-section">
                         <div class="my-profile-pics d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
                             </div>
                         </div>
                         <div class="what-is-happening col-11">
-                            <div class="d-flex col-12">
+                            <div class="d-flex">
                                 <label for="">
                                     <textarea placeholder="What is happening?!"></textarea>
                                 </label>
                             </div>
                             <div class=" d-flex col-12 justify-content-between">
                                 <div class="post-others d-flex">
-                                    <div class="">
+                                    <div class="other-options">
                                         <img src="asset/images/svg/media.svg" alt="">
+                                        <div class="nav-tooltip">Media</div>
                                     </div>
-                                    <div class="">
+                                    <div class="other-options">
                                         <img src="asset/images/svg/gif.svg" alt="">
+                                        <div class="nav-tooltip">GIF</div>
                                     </div>
-                                    <div class="">
+                                    <div class="other-options">
                                         <img src="asset/images/svg/poll.svg" alt="">
+                                        <div class="nav-tooltip">Poll</div>
                                     </div>
-                                    <div class="">
+                                    <div class="other-options">
                                         <img src="asset/images/svg/emoji.svg" alt="">
+                                        <div class="nav-tooltip">Emoji</div>
                                     </div>
-                                    <div class="">
+                                    <div class="other-options">
                                         <img src="asset/images/svg/calender.svg" alt="">
+                                        <div class="nav-tooltip">Schedule</div>
                                     </div>
-                                    <div class="" disabled>
+                                    <div class="location-disabled" disabled>
                                         <img src="asset/images/svg/location.svg" alt="" disabled>
                                     </div>
                                 </div>
@@ -132,18 +137,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tweet-section d-flex col-12">
+                    <div class="tweet-section d-flex">
                         <div class="my-profile-pics d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
                             </div>
                         </div>
-                        <div class="what-is-happening col-11">
-                            <div class="d-flex col-12">
+                        <div class="what-is-happening">
+                            <div class="name-handle">
                                 <div class="name"><b>SENATOR SALIU MUSTAPHA</b></div>
-                                <div class="handle">@RealMallamSaliu</div>
-                                <span>.</span>
-                                <div class="tweet-time">1h</div>
+                                <div class="handle">
+                                    <span>@RealMallamSaliu</span>
+                                    <span>.</span>
+                                    <span class="tweet-time">1h</span>
+                                </div>
                             </div>
                             <div class="tweet">
                                 <p>
@@ -156,7 +163,7 @@
                                 <a href="#" class="text-primary" style="text-decoration: none;">
                                     #Ramadan
                                 </a>
-                                <div class="d-flex ramadan-kareem">
+                                <div class=" ramadan-kareem">
                                     <img src="asset/images/image/Ramadan-kareem.jpeg" alt="">
                                 </div>
                             </div>
@@ -188,7 +195,7 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="">
+                                    <div class="bookmart">
                                         <div class="">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
@@ -202,18 +209,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tweet-section d-flex col-12">
+                    <div class="tweet-section d-flex">
                         <div class="my-profile-pics d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
                             </div>
                         </div>
-                        <div class="what-is-happening col-11">
-                            <div class="d-flex col-12">
+                        <div class="what-is-happening">
+                            <div class="name-handle">
                                 <div class="name"><b>Bashir Ahmad</b></div>
-                                <div class="handle">@BashirAhmad</div>
-                                <span>.</span>
-                                <div class="tweet-time">33m</div>
+                                <div class="handle">
+                                    <span>@BashirAhmad</span>
+                                    <span>.</span>
+                                    <span class="tweet-time">33m</span>
+                                </div>
                             </div>
                             <div class="tweet">
                                 <p class="mb-0">
@@ -228,7 +237,7 @@
                                         <div class="">
                                             <img src="asset/images/svg/reply.svg" alt="">
                                         </div>
-                                        <div class="d-flex">9</div>
+                                        <div class="d-flex"><span>9</span></div>
                                     </div>
                                     <div class="reactions">
                                         <div class="">
@@ -250,7 +259,7 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="">
+                                    <div class="bookmart">
                                         <div class="">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
@@ -264,18 +273,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tweet-section d-flex col-12">
+                    <div class="tweet-section d-flex">
                         <div class="my-profile-pics d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
                             </div>
                         </div>
-                        <div class="what-is-happening col-11">
-                            <div class="d-flex col-12">
+                        <div class="what-is-happening">
+                            <div class="name-handle">
                                 <div class="name"><b>Instablognaija</b></div>
-                                <div class="handle">@instablognaija</div>
-                                <span>.</span>
-                                <div class="tweet-time">2h</div>
+                                <div class="handle">
+                                    <span>@instablognaija</span>
+                                    <span>.</span>
+                                    <span class="tweet-time">2h</span>
+                                </div>
                             </div>
                             <div class="tweet">
                                 <p class="">
@@ -313,7 +324,7 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="">
+                                    <div class="bookmart">
                                         <div class="">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
@@ -327,18 +338,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tweet-section d-flex col-12">
+                    <div class="tweet-section d-flex">
                         <div class="my-profile-pics d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
                             </div>
                         </div>
-                        <div class="what-is-happening col-11">
-                            <div class="d-flex col-12">
+                        <div class="what-is-happening">
+                            <div class="name-handle">
                                 <div class="name"><b>Daniel Regha</b></div>
-                                <div class="handle">@DanielRegha</div>
-                                <span>.</span>
-                                <div class="tweet-time">33m</div>
+                                <div class="handle">
+                                    <span>@DanielRegha</span>
+                                    <span>.</span>
+                                    <span class="tweet-time">33m</span>
+                                </div>
                             </div>
                             <div class="tweet">
                                 <p class="mb-0">
@@ -375,7 +388,7 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="">
+                                    <div class="bookmart">
                                         <div class="">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
@@ -389,18 +402,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tweet-section d-flex col-12">
+                    <div class="tweet-section d-flex">
                         <div class="my-profile-pics d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
                             </div>
                         </div>
-                        <div class="what-is-happening col-11">
-                            <div class="d-flex col-12">
+                        <div class="what-is-happening">
+                            <div class="name-handle">
                                 <div class="name"><b>SENATOR SALIU MUSTAPHA</b></div>
-                                <div class="handle">@RealMallamSaliu</div>
-                                <span>.</span>
-                                <div class="tweet-time">1h</div>
+                                <div class="handle">
+                                    <span>@RealMallamSaliu</span>
+                                    <span>.</span>
+                                    <span class="tweet-time">1h</span>
+                                </div>
                             </div>
                             <div class="tweet">
                                 <p>
@@ -445,7 +460,7 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="">
+                                    <div class="bookmart">
                                         <div class="">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
@@ -459,22 +474,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tweet-section d-flex col-12">
+                    <div class="tweet-section d-flex">
                         <div class="my-profile-pics d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
                             </div>
                         </div>
-                        <div class="what-is-happening col-11">
-                            <div class="d-flex col-12">
+                        <div class="what-is-happening">
+                            <div class="name-handle">
                                 <div class="name"><b>oseni rufai</b></div>
-                                <div class="handle">@ruffydfire</div>
-                                <span>.</span>
-                                <div class="tweet-time">4h</div>
+                                <div class="handle">
+                                    <span>@ruffydfire</span>
+                                    <span>.</span>
+                                    <span class="tweet-time">4h</span>
+                                </div>
                             </div>
                             <div class="tweet">
                                 <p class="mb-0">
-                                Senator Ningi don't divide Nigeria
+                                    Senator Ningi don't divide Nigeria
                                 </p>
                             </div>
                             <div class="reaction-container">
@@ -483,7 +500,7 @@
                                         <div class="">
                                             <img src="asset/images/svg/reply.svg" alt="">
                                         </div>
-                                        <div class="d-flex">167</div>
+                                        <div class=""><span>167</span></div>
                                     </div>
                                     <div class="reactions">
                                         <div class="">
@@ -505,7 +522,7 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="">
+                                    <div class="bookmart">
                                         <div class="">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
@@ -519,18 +536,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tweet-section d-flex col-12">
+                    <div class="tweet-section d-flex">
                         <div class="my-profile-pics d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
                             </div>
                         </div>
-                        <div class="what-is-happening col-11">
-                            <div class="d-flex col-12">
+                        <div class="what-is-happening">
+                            <div class="name-handle">
                                 <div class="name"><b>Erisco Food Limited</b></div>
-                                <div class="handle">@EriscoOfficial</div>
-                                <span>.</span>
-                                <div class="tweet-time">15h</div>
+                                <div class="handle">
+                                    <span>@EriscoOfficial</span>
+                                    <span>.</span>
+                                    <span class="tweet-time">15h</span>
+                                </div>
                             </div>
                             <div class="tweet">
                                 <p>
@@ -575,7 +594,7 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="">
+                                    <div class="bookmart">
                                         <div class="">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
@@ -591,7 +610,7 @@
                     </div>
                 </div>
             </div>
-            <div class="other-info d-flex flex-column col-4">
+            <div class="other-info flex-column">
                 <div class="search-section">
                     <div class="search-box">
                         <div class="search-icon">
@@ -824,16 +843,76 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <div class="header-modal">
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h6 class="modal-title" id="exampleModalLabel">Draft</h6>
             </div>
             <div class="modal-body">
-              ...
+              <div class="">
+                <div class="everyone">
+                    <label for="everyone" class="">
+                        <div class="">
+                            <div class="">Everyone</div>
+                            <div class=""></div>
+                        </div>
+                        <input type="checkbox" name="" id="everyone">
+                        <div class="choose-audience">
+                            <h5>Choose audience</h5>
+                            <div class="audience-container">
+                                <div class="audience">
+                                    <div class="">
+                                        <img src="asset/images/svg/world.svg" alt="">
+                                    </div>
+                                    <div class="">Everyone</div>
+                                </div>
+                                <div class="">
+                                    <img src="asset/images/svg/right.svg" alt="">
+                                </div>
+                            </div>
+                            <h5>My Communities</h5>
+                        </div>
+                    </label>
+                </div>
+                <div class="">
+                    <div class=""></div>
+                    <div class="">
+                        <input type="text" placeholder="What is happening?!">
+                    </div>
+                </div>
+              </div>
+              <div class=""></div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+                <div class=" d-flex col-12 justify-content-between">
+                    <div class="post-others d-flex">
+                        <div class="other-options">
+                            <img src="asset/images/svg/media.svg" alt="">
+                            <div class="nav-tooltip">Media</div>
+                        </div>
+                        <div class="other-options">
+                            <img src="asset/images/svg/gif.svg" alt="">
+                            <div class="nav-tooltip">GIF</div>
+                        </div>
+                        <div class="other-options">
+                            <img src="asset/images/svg/poll.svg" alt="">
+                            <div class="nav-tooltip">Poll</div>
+                        </div>
+                        <div class="other-options">
+                            <img src="asset/images/svg/emoji.svg" alt="">
+                            <div class="nav-tooltip">Emoji</div>
+                        </div>
+                        <div class="other-options">
+                            <img src="asset/images/svg/calender.svg" alt="">
+                            <div class="nav-tooltip">Schedule</div>
+                        </div>
+                        <div class="" disabled>
+                            <img src="asset/images/svg/location.svg" alt="" disabled>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">post</button>
+                    </div>
+                </div>
             </div>
           </div>
         </div>

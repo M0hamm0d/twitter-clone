@@ -1,4 +1,8 @@
+.wrapper{
+    display: flex;
+}
 .side-nav{
+    display: flex;
     height: 100vh;
     overflow: auto;
     padding: 0px 8px;
@@ -63,8 +67,46 @@
 .post{
     margin: 16px 0px;
 }
+.header-modal{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+}
+.header-modal h6{
+    color: #1d98f0;
+}
+.everyone{
+    position: relative;
+}
+#everyone{
+    display: none;
+}
+.choose-audience{
+    display: none;
+    flex-direction: column;
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid black;
+    position: absolute;
+    left: -20px;
+    padding: 12px 16px;
+}
+#everyone:checked ~ .choose-audience{
+    display: flex;
+}
+.audience-container{
+    display: flex;
+    justify-content: space-between;
+}
+.audience{
+    display: flex;
+}
+.tweet-and-trend-container{
+    flex: 1;
+}
 .tweet-container{
     border-right: 1px solid rgba(239, 243, 244, 1.00);
+    max-width: 600px;
 }
 .tweet-navigation{
     display: flex;
@@ -104,6 +146,7 @@
 .tweeting-section{
     padding: 0 16px 0;
     border-bottom: 1px solid rgba(239, 243, 244, 1.00);
+    display: flex;
 }
 .my-profile-pics{
     margin-right: 8px;
@@ -111,6 +154,7 @@
 .what-is-happening{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 label{
     width: 100%;
@@ -126,6 +170,20 @@ textarea{
     border-radius: 30px;
     padding: 3px 10px 5px;
 }
+.post-others >*{
+    display: flex;
+    border-radius: 50%;
+    position: relative;
+}
+.post-others>*:hover{
+    background-color: #1d98f0;
+}
+.location-disabled:hover{
+    background-color: white;
+}
+.other-options:hover > .nav-tooltip{
+    display: flex;
+}
 .post-others img{
     color: rgb(29, 155, 240);
     padding: 9px;
@@ -133,6 +191,9 @@ textarea{
 .tweet-section{
     padding: 16px 16px 0;
     border-bottom: 1px solid rgba(239, 243, 244, 1.00);
+}
+.name-handle{
+    display: flex;
 }
 .ramadan-kareem img{
     width: 100%;
@@ -155,6 +216,9 @@ textarea{
     display: flex;
     align-items: center;
     flex: 1;
+}
+.reactions:hover{
+    color: blue;
 }
 .reactions>*:first-child{
     display: flex;
@@ -182,7 +246,7 @@ textarea{
     z-index: 1;
 }
 .reactions img:hover{
-    background-color: beige ;
+    background-color: #e8f5fd;
     color: beige;
     border-radius: 50%;
 }
@@ -199,6 +263,9 @@ textarea{
     padding-bottom: 64px;
     height: max-content;
     position: sticky;
+    display: flex;
+    height: 100%;
+    max-width: 290px;
     /* bottom: -1607px; */
     top: -1200px;
 }
@@ -424,4 +491,55 @@ textarea{
     width: 17px;
     height: 13px;
     padding: 0px 4px;
+}
+
+@media (max-width: 575.98px) {
+    .wrapper{
+        width: 100%;
+    }
+    /* .tweet-and-trend-container{
+        max-width: 320px;
+        width: 100%;
+    }
+    .tweet-container{
+        max-width: 320px;
+    } */
+    .timelime-settings{
+        display: none;
+    }
+    .side-nav{
+        display: none;
+    }
+    .bookmart{
+        display: none;
+    }
+    .other-info{
+        display: none;
+    }
+    .tweeting-section{
+        display: none;
+    }
+    .name{
+        display: block;
+    }
+    .name-handle{
+        display: block;
+    }
+    .ramadan-kareem{
+        width: fit-content;
+    }
+    .reaction-container{
+        disply: none;
+    }
+}
+@media (min-width: 1200px) {
+    .wrapper{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .other-info{
+        max-width: 350px;
+        margin-right: 0px;
+        height: max-content;
+    }
 }
