@@ -4,7 +4,7 @@
 .side-nav{
     display: flex;
     height: 100vh;
-    overflow: auto;
+    overflow-y: auto;
     padding: 0px 8px;
     scrollbar-color: rgb(185, 202, 211) rgb(247, 249, 249);
 }
@@ -28,8 +28,9 @@
     display: flex;
     padding: 12px;
     border-radius: 50%;
+    position: relative;
 }
-.logo-cover:hover ~ .nav-tooltip{
+.logo-cover:hover ~ .nav-tooltip, .more-icon:hover > .nav-tooltip{
     display: flex;
 }
 .Logo-cover:hover ~ .nav-tooltip{
@@ -52,7 +53,6 @@
     font-size: 12px;
     z-index: 2;
 }
-
 .logo-cover:hover{
     background-color: #e7e7e8;
 }
@@ -60,6 +60,52 @@
     padding: 12px;
     background-color: rgb(29, 155, 240);
     border-radius: 50%;
+}
+#more-icon-dropdown{
+    display: none;
+}
+.logo-cover .more-icon-dropdown{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 318px;
+    z-index: 3;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    bottom: 0;
+    left: -5px;
+    box-shadow: 0 0 15px rgba(101,119,134,0.2), 0 0 3px 1px rgba(101,119,134,0.15);
+}
+.more-icon-dropdown b{
+    font-size: 20px;
+}
+.more-icon-dropdown > div{
+    padding: 16px;
+}
+.more-icon-dropdown > div:hover{
+    background-color: #F7F7F7;
+}
+.more-icon-dropdown img{
+    padding: 0;
+    width: 23px;
+    height: 23px;
+    padding-right: 5px;
+}
+.more-icon-dropdown img:hover{
+    background-color: white;
+}
+.more-icon-dropdown .top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.more-icon-dropdown .buttom{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#more-icon-dropdown:checked ~ .more-icon-dropdown{
+    display: flex;
+    width: 318px;
 }
 /* .my-profile{
     padding: 12px;
@@ -111,13 +157,29 @@
 .tweet-navigation{
     display: flex;
     align-items: center;
-    background-color: white;
+    /* background-color: white; */
+    background: hsl(0 100% 100% / 75%);
+    backdrop-filter: blur(50px);
 }
 .tweet-nav{
     display: flex;
-    padding: 8px;
     justify-content: center;
     flex: 1;
+}
+.tweet-nav a{
+    text-decoration: none;
+    padding: 16px 0px;
+    font-weight: 700;
+    position: relative;
+}
+.tweet-nav div{
+    position: absolute;
+    bottom: 0;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px; */
+    border-radius: 5px;
 }
 .tweet-nav:hover{
     background-color: #e4e5e8;
@@ -150,13 +212,17 @@
 }
 .my-profile-pics{
     margin-right: 8px;
+    position: relative;
+}
+.my-profile{
+    height: 40px;
 }
 .what-is-happening{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-label{
+.tweeting-section label{
     width: 100%;
     border: 0px;
     outline: 0px;
@@ -191,9 +257,153 @@ textarea{
 .tweet-section{
     padding: 16px 16px 0;
     border-bottom: 1px solid rgba(239, 243, 244, 1.00);
+    cursor: pointer;
+}
+.tweet-section:hover{
+    background-color: #f7f7f7;
 }
 .name-handle{
     display: flex;
+    justify-content: space-between;
+}
+.name-handle>*:first-child{
+    display: flex;
+}
+.name-handle .more-icon{
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+}
+.name-handle .more-icon:hover{
+    background-color: #1d98f0;
+}
+.name, .handle span{
+    position: relative;
+}
+.name a,.handle span a, .my-profile-pics a{
+    color: #0f1419;
+    text-decoration: none;
+}
+.name a:hover,.handle span a:hover,.my-profile-pics a:hover{
+    text-decoration: underline;
+}
+#more-dropdown{
+    display: none;
+}
+.more-dropdown{
+    display: none;
+    position: absolute;
+}
+.more-icon .more-dropdown{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 351px;
+    z-index: 3;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    top: 0;
+    right: -5px;
+    box-shadow: 0 0 15px rgba(101,119,134,0.2), 0 0 3px 1px rgba(101,119,134,0.15);
+}
+.more-dropdown b{
+    font-size: 15px;
+}
+.more-dropdown > div{
+    padding: 12px 16px;
+}
+.more-dropdown > div:hover{
+    background-color: #F7F7F7;
+}
+.more-dropdown img{
+    padding: 0;
+    width: 23px;
+    height: 23px;
+    padding-right: 5px;
+}
+.more-dropdown img:hover{
+    background-color: white;
+}
+.more-dropdown .top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.more-dropdown .buttom{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#more-dropdown:checked ~ .more-dropdown{
+    display: flex;
+}
+.share-bookmart-section{
+    display: flex;
+}
+.account-info-popup{
+    width: 300px;
+    height: 308px;
+    position: absolute;
+    box-shadow: 0 0 15px rgba(101, 119, 134, 0.2),0 0 3px 1px rgba(101, 119, 134, 0.15);
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-25%);
+    top: 110px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    flex-direction: column;
+    z-index: 1021;
+    display: none;
+}
+.follow-btn{
+    padding: 0 16px;
+    border: 1px solid #A0A9B0;
+    display: flex;
+    height: 35px;
+    align-items: center;
+    border-radius: 16px;
+    justify-content: center;
+}
+.unfollow-btn{
+    display: none;
+    padding: 0 18.8px;
+    color: #f4212e;
+    background-color: #fee8ea;
+    border: 1px solid #fdc9ce;
+    height: 35px;
+    align-items: center;
+    border-radius: 16px;
+    justify-content: center;
+}
+.follow-button:hover > .follow-btn{
+    display: none;
+}
+.follow-button:hover > .unfollow-btn{
+    display: flex;
+}
+.account-info-popup > div{
+    width: 100%;
+}
+.account-info-popup span{
+    font-size: 14px;
+}
+.name:hover > .account-info-popup, .handle span:hover > .account-info-popup, .my-profile-pics:hover > .account-info-popup{
+    display: flex;
+}
+.people-following{
+    color: #536471;
+}
+.people-following:hover{
+    text-decoration: underline;
+}
+.handle{
+    color: #536471;
+    text-decoration: none;
+}
+.handle span:hover{
+    text-decoration: none;
 }
 .ramadan-kareem img{
     width: 100%;
@@ -217,9 +427,13 @@ textarea{
     align-items: center;
     flex: 1;
 }
-.reactions:hover{
-    color: blue;
+.reactions button{
+    border: 0px;
+    background-color: white;
 }
+/* .reactions:hover{
+    color: blue;
+} */
 .reactions>*:first-child{
     display: flex;
     flex: 1;
@@ -245,19 +459,117 @@ textarea{
     padding: 7px;
     z-index: 1;
 }
-.reactions img:hover{
+.reactions  img:hover{
     background-color: #e8f5fd;
     color: beige;
     border-radius: 50%;
 }
+.react:hover ~ .number{
+    color: #1d98f0;
+}
+.reactions .repost-dropdown{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 114px;
+    z-index: 3;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    top: 0;
+    right: -20px;
+    box-shadow: 0 0 15px rgba(101,119,134,0.2), 0 0 3px 1px rgba(101,119,134,0.15);
+}
+.repost-dropdown > div{
+    padding: 12px 16px;
+}
+.repost-dropdown > div:hover{
+    background-color: #F7F7F7;
+}
+.repost-dropdown img{
+    padding: 0;
+    width: 23px;
+    height: 23px;
+    padding-right: 5px;
+}
+.repost-dropdown img:hover{
+    background-color: white;
+}
+.repost-dropdown .top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.repost-dropdown .buttom{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#repost-dropdown{
+    display: none;
+}
+#repost-dropdown:checked ~ .repost-dropdown{
+    display: flex;
+}
 .share-bookmart-section{
     display: flex;
 }
-.share-bookmart-section > div{
+/* .share-bookmart-section > div{
     padding: 9px;
-}
+} */
 .reactions span{
     z-index: 2;
+}
+.bookmart-container img, .share-container img{
+    border-radius: 50%;
+    backgrond-color: #536471;
+    display: flex;
+    align-items: center;
+    color: #1d98f0;
+    padding: 7px;
+}
+.share-container{
+    position: relative;
+}
+#share-dropdown{
+    display: none;
+}
+.share-container .share-dropdown{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 240px;
+    z-index: 3;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    top: 0;
+    right: 5px;
+    box-shadow: 0 0 15px rgba(101,119,134,0.2), 0 0 3px 1px rgba(101,119,134,0.15);
+}
+.share-dropdown > div{
+    padding: 12px 16px;
+}
+.share-dropdown > div:hover{
+    background-color: #F7F7F7;
+}
+.share-dropdown img{
+    padding: 0;
+    width: 23px;
+    height: 23px;
+    padding-right: 5px;
+}
+.share-dropdown img:hover{
+    background-color: white;
+}
+.share-dropdown .top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.share-dropdown .buttom{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#share-dropdown:checked ~ .share-dropdown{
+    display: flex;
 }
 .other-info{
     padding-bottom: 64px;
@@ -404,14 +716,28 @@ textarea{
 .trending-info div{
     color: #536471;
 }
+.trending{
+    display: flex;
+    justify-content: space-between;
+}
 .more{
+    position: relative;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+.more:hover > .nav-tooltip{
+    display: flex;
+    color: white;
+}
+/* .more{
     position: absolute;
     right: 15px;
     top: 10px;
     display: flex;
     align-items: center;
     padding: 8px;
-}
+} */
 .more:hover{
     border-radius: 50%;
     background-color: blue;
@@ -492,7 +818,65 @@ textarea{
     height: 13px;
     padding: 0px 4px;
 }
-
+.vertical-rule{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-25%);
+    top: 100px;
+}
+::placeholder{
+    font-size: 18px;
+}
+.modal-dialog{
+    max-width: 600px;
+}
+.modal-content{
+    min-width: 600px;
+}
+.modal-content .tweet-section{
+    border-bottom: 0px;
+}
+.modal-content .tweet-section:hover{
+    background-color: white;
+}
+.my-reply{
+    display: flex;
+    padding: 0px 16px;
+}
+.modal-content .post-your-reply{
+    width: 100%;
+    margin-top: 5px;
+    height: 96px;
+}
+.modal-content input{
+    outline: none;
+    border: none;
+}
+.modal-content .footer{
+    padding: 8px 16px;
+}
+.footer button{
+    border-radius: 20px;
+    padding: 5px 15px 7px 15px;
+    display: flex;
+    align-items: center;
+}
+.views-modal-content{
+    padding-bottom: 38px;
+}
+.views{
+    max-width: 400px;
+    margin: 32px auto;
+}
+.views p a{
+    color: black;
+}
+.dismiss-btn button{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+}
 @media (max-width: 575.98px) {
     .wrapper{
         width: 100%;
@@ -510,6 +894,12 @@ textarea{
     .side-nav{
         display: none;
     }
+    .name-handle>*:first-child{
+        display: block;
+    }
+    .name b{
+        font-size: 15px;
+    }
     .bookmart{
         display: none;
     }
@@ -522,9 +912,6 @@ textarea{
     .name{
         display: block;
     }
-    .name-handle{
-        display: block;
-    }
     .ramadan-kareem{
         width: fit-content;
     }
@@ -534,7 +921,7 @@ textarea{
 }
 @media (min-width: 1200px) {
     .wrapper{
-        max-width: 1100px;
+        max-width: 1080px;
         margin: 0 auto;
     }
     .other-info{

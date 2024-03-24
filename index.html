@@ -61,9 +61,54 @@
                         <div class="nav-tooltip">Profile</div>
                     </div>
                     <div class="LOGO-COVER d-flex justify-content-center">
-                        <div class="logo-cover">
+                        <label for="more-icon-dropdown" class="logo-cover">
                             <img src="asset/images/svg/more.svg" alt="">
-                        </div>
+                            <input type="checkbox" name="more-icon-dropdown" id="more-icon-dropdown">
+                            <div class="more-icon-dropdown">
+                                <div class="d-flex">
+                                    <div class="">
+                                        <img src="asset/images/svg/twitter-logo.svg" alt="">
+                                    </div>
+                                    <div class=""><b>Premium</b></div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="">
+                                        <img src="asset/images/svg/bookmart.svg" alt="">
+                                    </div>
+                                    <div class=""><b>Bookmarks</b></div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="">
+                                        <img src="asset/images/svg/profile.svg" alt="">
+                                    </div>
+                                    <div class=""><b>Communities</b></div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="">
+                                        <img src="asset/images/svg/monietization.svg" alt="">
+                                    </div>
+                                    <div class=""><b>Monetization</b></div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="">
+                                        <img src="asset/images/svg/pro.svg" alt="">
+                                    </div>
+                                    <div class=""><b>Pro</b></div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="">
+                                        <img src="asset/images/svg/ads.svg" alt="">
+                                    </div>
+                                    <div class="">Ads</div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="">
+                                        <img src="asset/images/svg/timelime-setting.svg" alt="">
+                                    </div>
+                                    <div class=""><b>Settings and privacy</b></div>
+                                </div>
+                            </div>
+                        </label>
                         <div class="nav-tooltip">More</div>
                     </div>
                 </div>
@@ -74,10 +119,10 @@
                    <div class="nav-tooltip">Post</div>
                 </div>
             </div>
-            <div class="my-profile d-flex justify-content-center">
+            <div class="d-flex justify-content-center">
                 <div class="logo-cover">
                     <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;height: 40px;">
-                </div>
+                </div> 
             </div>
         </div>
         <!-- justify-content-between -->
@@ -85,8 +130,13 @@
             <div class="tweet-container d-flex">
                 <div class="d-flex flex-column">
                     <div class="tweet-navigation sticky-top ">
-                        <div class="tweet-nav">For you</div>
-                        <div class="tweet-nav">Following</div>
+                        <div class="tweet-nav">
+                            <a href="#" style="color: #0f1419;">For you</a>
+                            <div class="" style="background-color: rgb(29, 155, 240); height: 4px; width: 56px;"></div>
+                        </div>
+                        <div class="tweet-nav">
+                            <a href="#" style="color: #536471">Following</a>
+                        </div>
                         <div class="timelime-settings">
                             <div class="timelime-setting">
                                 <img style="width: 20px;height: 20px;" src="asset/images/svg/timelime-setting.svg" alt="">
@@ -138,19 +188,233 @@
                         </div>
                     </div>
                     <div class="tweet-section d-flex">
-                        <div class="my-profile-pics d-flex">
-                            <div class="">
+                        <div class="my-profile-pics my-profile d-flex">
+                            <a href="#" class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
+                            </a>
+                            <!-- <div class="d-flex vertical-rule" style="height: 480px;">
+                                <div class="vr"></div>
+                            </div> -->
+                            <div class="account-info-popup">
+                                <div class="d-flex justify-content-between">
+                                    <div class="my-profile-pics d-flex">
+                                        <a href="#" class="">
+                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                        </a>
+                                    </div>
+                                    <div class="follow-button">
+                                        <h6 class="follow-btn">Following</h6>
+                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                    <div class="handle">@RealMallamSaliu</div>
+                                </div>
+                                <p class="">
+                                    Senator, Kwara Central,Turaki of Ilorin,
+                                    Businessman, Philanthropist and Father.
+                                </p>
+                                <div class="">
+                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                </div>
+                                <div class="d-flex mt-2 people-following">
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="" style="font-size: 13px; display: inline;">
+                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                            and 13 others you follow
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="what-is-happening">
                             <div class="name-handle">
-                                <div class="name"><b>SENATOR SALIU MUSTAPHA</b></div>
-                                <div class="handle">
-                                    <span>@RealMallamSaliu</span>
-                                    <span>.</span>
-                                    <span class="tweet-time">1h</span>
+                                <div class="">
+                                    <div class="name">
+                                        <b><a href="#">SENATOR SALIU MUSTAPHA</a></b>
+                                        <div class="account-info-popup">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="my-profile-pics d-flex">
+                                                    <a href="#" class="">
+                                                        <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                    </a>
+                                                </div>
+                                                <div class="follow-button">
+                                                    <h6 class="follow-btn">Following</h6>
+                                                    <h6 class="unfollow-btn">Unfollow</h6>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                <div class="handle">@RealMallamSaliu</div>
+                                            </div>
+                                            <p class="">
+                                                Senator, Kwara Central,Turaki of Ilorin,
+                                                Businessman, Philanthropist and Father.
+                                            </p>
+                                            <div class="">
+                                                <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                <a href=""><b>10.2k </b><span>Followers</span></a>
+                                            </div>
+                                            <div class="d-flex mt-2 people-following">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="" style="font-size: 13px; display: inline;">
+                                                        Followed by Micheal Chibuzo,APC Nigeria,
+                                                        and 13 others you follow
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handle">
+                                        <span class="">
+                                            @RealMallamSaliu
+                                            <div class="account-info-popup">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="my-profile-pics d-flex">
+                                                        <a href="#" class="">
+                                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="follow-button">
+                                                        <h6 class="follow-btn">Following</h6>
+                                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                    <div class="handle">@RealMallamSaliu</div>
+                                                </div>
+                                                <p class="">
+                                                    Senator, Kwara Central,Turaki of Ilorin,
+                                                    Businessman, Philanthropist and Father.
+                                                </p>
+                                                <div class="">
+                                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                                </div>
+                                                <div class="d-flex mt-2 people-following">
+                                                    <a href="#">
+                                                        <div class="d-flex">
+                                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <p class="" style="font-size: 13px; display: inline;">
+                                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                                            and 13 others you follow
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span>.</span>
+                                        <span class="tweet-time">1h</span>
+                                    </div>
                                 </div>
+                                <label class="more-icon" for="more-dropdown">
+                                    <img src="asset/images/svg/more-icon.svg" alt="">
+                                    <input type="checkbox" id="more-dropdown">
+                                    <div class="more-dropdown">
+                                        <div class="d-flex top">
+                                            <div class="">
+                                                <img src="asset/images/svg/not-interested.svg" alt="">
+                                            </div>
+                                            <div class=""><b>Not interested in this post</b></div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <img src="asset/images/svg/follow.svg" alt="">
+                                            </div>
+                                            <div class=""><b>Follow @RealMallamSaliu</b></div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <img src="asset/images/svg/list-icon.svg" alt="">
+                                            </div>
+                                            <div class=""><b>Add/remove @RealMallamSaliu from List</b></div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <img src="asset/images/svg/mute.svg" alt="">
+                                            </div>
+                                            <div class=""><b>Mute @RealMallamSaliu</b></div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <img src="asset/images/svg/block.svg" alt="">
+                                            </div>
+                                            <div class=""><b>Block @RealMallamSaliu</b></div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <img src="asset/images/svg/view.svg" alt="">
+                                            </div>
+                                            <div class=""><b>View post engagement</b></div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <img src="asset/images/svg/embed.svg" alt="">
+                                            </div>
+                                            <div class=""><b>Embed post</b></div>
+                                        </div>
+                                        <div class="d-flex buttom">
+                                            <div class="">
+                                                <img src="asset/images/svg/report.svg" alt="">
+                                            </div>
+                                            <div class=""><b>Report post</b></div>
+                                        </div>
+                                    </div>
+                                    <div class="nav-tooltip">More</div>
+                                </label>
                             </div>
                             <div class="tweet">
                                 <p>
@@ -170,58 +434,254 @@
                             <div class="reaction-container">
                                 <div class="reaction-section">
                                     <div class="reactions">
-                                        <div class="">
-                                            <img src="asset/images/svg/reply.svg" alt="">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#reply">
+                                            <img src="asset/images/svg/reply.svg" alt="" style="color: rgb(29, 155, 240);">
                                         </div>
-                                        <div class="d-flex"><span>9</span></div>
+                                        <div class="d-flex number"><span>9</span></div>
                                     </div>
-                                    <div class="reactions">
-                                        <div class="">
+                                    <label class="reactions" for="repost-dropdown">
+                                        <div class="repost react">
                                             <img src="asset/images/svg/repost.svg" alt="">
+                                            <input type="checkbox" id="repost-dropdown">
+                                            <div class="repost-dropdown">
+                                                <div class="d-flex top">
+                                                    <div class="">
+                                                        <img src="asset/images/svg/repost.svg" alt="" class="">
+                                                    </div>
+                                                    <div class=""><b>Repost</b></div>
+                                                </div>
+                                                <div class="d-flex buttom">
+                                                    <div class="">
+                                                        <img src="asset/images/svg/quoute.svg" alt="">
+                                                    </div>
+                                                    <div class=""><b>Quoute</b></div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class=""><span>212</span></div>
-                                    </div>
+                                        <div class="number"><span>212</span></div>
+                                    </label>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react">
                                             <img src="asset/images/svg/like.svg" alt="">
                                         </div>
-                                        <div class=""><span>56</span></div>
+                                        <div class="number"><span>56</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#views">
                                             <img src="asset/images/svg/view.svg" alt="">
                                         </div>
-                                        <div class=""><span>325</span></div>
+                                        <div class="number"><span>325</span></div>
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="bookmart">
-                                        <div class="">
+                                    <div class="bookmart-container">
+                                        <div class="bookmart">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <div class="">
+                                    <label class="share-container" for="share-dropdown">
+                                        <div class="share">
                                             <img src="asset/images/svg/share.svg" alt="">
+                                            <input type="checkbox" id="share-dropdown">
+                                            <div class="share-dropdown">
+                                                <div class="d-flex top">
+                                                    <div class="">
+                                                        <img src="asset/images/svg/copy.svg" alt="">
+                                                    </div>
+                                                    <div class=""><b>Copy link</b></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <div class="">
+                                                        <img src="asset/images/svg/share.svg" alt="">
+                                                    </div>
+                                                    <div class=""><b>Share post via ...</b></div>
+                                                </div>
+                                                <div class="d-flex buttom">
+                                                    <div class="">
+                                                        <img src="asset/images/svg/direct-message.svg" alt="">
+                                                    </div>
+                                                    <div class=""><b>Send via Direct Message</b></div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </label>
                                 </div> 
                             </div>
                         </div>
                     </div>
                     <div class="tweet-section d-flex">
-                        <div class="my-profile-pics d-flex">
+                        <div class="my-profile-pics my-profile d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
+                            </div>
+                            <div class="account-info-popup">
+                                <div class="d-flex justify-content-between">
+                                    <div class="my-profile-pics d-flex">
+                                        <a href="#" class="">
+                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                        </a>
+                                    </div>
+                                    <div class="follow-button">
+                                        <h6 class="follow-btn">Following</h6>
+                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                    <div class="handle">@RealMallamSaliu</div>
+                                </div>
+                                <p class="">
+                                    Senator, Kwara Central,Turaki of Ilorin,
+                                    Businessman, Philanthropist and Father.
+                                </p>
+                                <div class="">
+                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                </div>
+                                <div class="d-flex mt-2 people-following">
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="" style="font-size: 13px; display: inline;">
+                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                            and 13 others you follow
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="what-is-happening">
                             <div class="name-handle">
-                                <div class="name"><b>Bashir Ahmad</b></div>
-                                <div class="handle">
-                                    <span>@BashirAhmad</span>
-                                    <span>.</span>
-                                    <span class="tweet-time">33m</span>
+                                <div class="">
+                                    <div class="name">
+                                        <b>Bashir Ahmad</b>
+                                        <div class="account-info-popup">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="my-profile-pics d-flex">
+                                                    <a href="#" class="">
+                                                        <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                    </a>
+                                                </div>
+                                                <div class="follow-button">
+                                                    <h6 class="follow-btn">Following</h6>
+                                                    <h6 class="unfollow-btn">Unfollow</h6>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                <div class="handle">@RealMallamSaliu</div>
+                                            </div>
+                                            <p class="">
+                                                Senator, Kwara Central,Turaki of Ilorin,
+                                                Businessman, Philanthropist and Father.
+                                            </p>
+                                            <div class="">
+                                                <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                <a href=""><b>10.2k </b><span>Followers</span></a>
+                                            </div>
+                                            <div class="d-flex mt-2 people-following">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="" style="font-size: 13px; display: inline;">
+                                                        Followed by Micheal Chibuzo,APC Nigeria,
+                                                        and 13 others you follow
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handle">
+                                        <span>
+                                            @BashirAhmad
+                                            <div class="account-info-popup">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="my-profile-pics d-flex">
+                                                        <a href="#" class="">
+                                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="follow-button">
+                                                        <h6 class="follow-btn">Following</h6>
+                                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                    <div class="handle">@RealMallamSaliu</div>
+                                                </div>
+                                                <p class="">
+                                                    Senator, Kwara Central,Turaki of Ilorin,
+                                                    Businessman, Philanthropist and Father.
+                                                </p>
+                                                <div class="">
+                                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                                </div>
+                                                <div class="d-flex mt-2 people-following">
+                                                    <a href="#">
+                                                        <div class="d-flex">
+                                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <p class="" style="font-size: 13px; display: inline;">
+                                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                                            and 13 others you follow
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span>.</span>
+                                        <span class="tweet-time">33m</span>
+                                    </div>
+                                </div>
+                                <div class="more-icon">
+                                    <img src="asset/images/svg/more-icon.svg" alt="">
+                                    <div class="nav-tooltip">More</div>
                                 </div>
                             </div>
                             <div class="tweet">
@@ -259,13 +719,13 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="bookmart">
-                                        <div class="">
+                                    <div class="bookmart-container">
+                                        <div class="bookmart">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <div class="">
+                                    <div class="share-container">
+                                        <div class="share">
                                             <img src="asset/images/svg/share.svg" alt="">
                                         </div>
                                     </div>
@@ -274,18 +734,178 @@
                         </div>
                     </div>
                     <div class="tweet-section d-flex">
-                        <div class="my-profile-pics d-flex">
+                        <div class="my-profile-pics my-profile d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
+                            </div>
+                            <div class="account-info-popup">
+                                <div class="d-flex justify-content-between">
+                                    <div class="my-profile-pics d-flex">
+                                        <a href="#" class="">
+                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                        </a>
+                                    </div>
+                                    <div class="follow-button">
+                                        <h6 class="follow-btn">Following</h6>
+                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                    <div class="handle">@RealMallamSaliu</div>
+                                </div>
+                                <p class="">
+                                    Senator, Kwara Central,Turaki of Ilorin,
+                                    Businessman, Philanthropist and Father.
+                                </p>
+                                <div class="">
+                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                </div>
+                                <div class="d-flex mt-2 people-following">
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="" style="font-size: 13px; display: inline;">
+                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                            and 13 others you follow
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="what-is-happening">
                             <div class="name-handle">
-                                <div class="name"><b>Instablognaija</b></div>
-                                <div class="handle">
-                                    <span>@instablognaija</span>
-                                    <span>.</span>
-                                    <span class="tweet-time">2h</span>
+                                <div class="">
+                                    <div class="name">
+                                        <b>Instablognaija</b>
+                                        <div class="account-info-popup">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="my-profile-pics d-flex">
+                                                    <a href="#" class="">
+                                                        <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                    </a>
+                                                </div>
+                                                <div class="follow-button">
+                                                    <h6 class="follow-btn">Following</h6>
+                                                    <h6 class="unfollow-btn">Unfollow</h6>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                <div class="handle">@RealMallamSaliu</div>
+                                            </div>
+                                            <p class="">
+                                                Senator, Kwara Central,Turaki of Ilorin,
+                                                Businessman, Philanthropist and Father.
+                                            </p>
+                                            <div class="">
+                                                <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                <a href=""><b>10.2k </b><span>Followers</span></a>
+                                            </div>
+                                            <div class="d-flex mt-2 people-following">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="" style="font-size: 13px; display: inline;">
+                                                        Followed by Micheal Chibuzo,APC Nigeria,
+                                                        and 13 others you follow
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handle">
+                                        <span class="">
+                                            @instablognaija
+                                            <div class="account-info-popup">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="my-profile-pics d-flex">
+                                                        <a href="#" class="">
+                                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="follow-button">
+                                                        <h6 class="follow-btn">Following</h6>
+                                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                    <div class="handle">@RealMallamSaliu</div>
+                                                </div>
+                                                <p class="">
+                                                    Senator, Kwara Central,Turaki of Ilorin,
+                                                    Businessman, Philanthropist and Father.
+                                                </p>
+                                                <div class="">
+                                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                                </div>
+                                                <div class="d-flex mt-2 people-following">
+                                                    <a href="#">
+                                                        <div class="d-flex">
+                                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <p class="" style="font-size: 13px; display: inline;">
+                                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                                            and 13 others you follow
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span>.</span>
+                                        <span class="tweet-time">2h</span>
+                                    </div>
+                                </div>
+                                <div class="more-icon">
+                                    <img src="asset/images/svg/more-icon.svg" alt="">
+                                    <div class="nav-tooltip">More</div>
                                 </div>
                             </div>
                             <div class="tweet">
@@ -324,13 +944,13 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="bookmart">
-                                        <div class="">
+                                    <div class="bookmart-container">
+                                        <div class="bookmart">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <div class="">
+                                    <div class="share-container">
+                                        <div class="share">
                                             <img src="asset/images/svg/share.svg" alt="">
                                         </div>
                                     </div>
@@ -343,14 +963,174 @@
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
                             </div>
+                            <div class="account-info-popup">
+                                <div class="d-flex justify-content-between">
+                                    <div class="my-profile-pics d-flex">
+                                        <a href="#" class="">
+                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                        </a>
+                                    </div>
+                                    <div class="follow-button">
+                                        <h6 class="follow-btn">Following</h6>
+                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                    <div class="handle">@RealMallamSaliu</div>
+                                </div>
+                                <p class="">
+                                    Senator, Kwara Central,Turaki of Ilorin,
+                                    Businessman, Philanthropist and Father.
+                                </p>
+                                <div class="">
+                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                </div>
+                                <div class="d-flex mt-2 people-following">
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="" style="font-size: 13px; display: inline;">
+                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                            and 13 others you follow
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="what-is-happening">
                             <div class="name-handle">
-                                <div class="name"><b>Daniel Regha</b></div>
-                                <div class="handle">
-                                    <span>@DanielRegha</span>
-                                    <span>.</span>
-                                    <span class="tweet-time">33m</span>
+                                <div class="">
+                                    <div class="name">
+                                        <b>Daniel Regha</b>
+                                        <div class="account-info-popup">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="my-profile-pics d-flex">
+                                                    <a href="#" class="">
+                                                        <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                    </a>
+                                                </div>
+                                                <div class="follow-button">
+                                                    <h6 class="follow-btn">Following</h6>
+                                                    <h6 class="unfollow-btn">Unfollow</h6>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                <div class="handle">@RealMallamSaliu</div>
+                                            </div>
+                                            <p class="">
+                                                Senator, Kwara Central,Turaki of Ilorin,
+                                                Businessman, Philanthropist and Father.
+                                            </p>
+                                            <div class="">
+                                                <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                <a href=""><b>10.2k </b><span>Followers</span></a>
+                                            </div>
+                                            <div class="d-flex mt-2 people-following">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="" style="font-size: 13px; display: inline;">
+                                                        Followed by Micheal Chibuzo,APC Nigeria,
+                                                        and 13 others you follow
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handle">
+                                        <span>
+                                            @DanielRegha
+                                            <div class="account-info-popup">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="my-profile-pics d-flex">
+                                                        <a href="#" class="">
+                                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="follow-button">
+                                                        <h6 class="follow-btn">Following</h6>
+                                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                    <div class="handle">@RealMallamSaliu</div>
+                                                </div>
+                                                <p class="">
+                                                    Senator, Kwara Central,Turaki of Ilorin,
+                                                    Businessman, Philanthropist and Father.
+                                                </p>
+                                                <div class="">
+                                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                                </div>
+                                                <div class="d-flex mt-2 people-following">
+                                                    <a href="#">
+                                                        <div class="d-flex">
+                                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <p class="" style="font-size: 13px; display: inline;">
+                                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                                            and 13 others you follow
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span>.</span>
+                                        <span class="tweet-time">33m</span>
+                                    </div>
+                                </div>
+                                <div class="more-icon">
+                                    <img src="asset/images/svg/more-icon.svg" alt="">
+                                    <div class="nav-tooltip">More</div>
                                 </div>
                             </div>
                             <div class="tweet">
@@ -388,13 +1168,13 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="bookmart">
-                                        <div class="">
+                                    <div class="bookmart-container">
+                                        <div class="bookmart">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <div class="">
+                                    <div class="share-container">
+                                        <div class="share">
                                             <img src="asset/images/svg/share.svg" alt="">
                                         </div>
                                     </div>
@@ -403,18 +1183,178 @@
                         </div>
                     </div>
                     <div class="tweet-section d-flex">
-                        <div class="my-profile-pics d-flex">
+                        <div class="my-profile-pics my-profile d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
+                            </div>
+                            <div class="account-info-popup">
+                                <div class="d-flex justify-content-between">
+                                    <div class="my-profile-pics d-flex">
+                                        <a href="#" class="">
+                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                        </a>
+                                    </div>
+                                    <div class="follow-button">
+                                        <h6 class="follow-btn">Following</h6>
+                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                    <div class="handle">@RealMallamSaliu</div>
+                                </div>
+                                <p class="">
+                                    Senator, Kwara Central,Turaki of Ilorin,
+                                    Businessman, Philanthropist and Father.
+                                </p>
+                                <div class="">
+                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                </div>
+                                <div class="d-flex mt-2 people-following">
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="" style="font-size: 13px; display: inline;">
+                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                            and 13 others you follow
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="what-is-happening">
                             <div class="name-handle">
-                                <div class="name"><b>SENATOR SALIU MUSTAPHA</b></div>
-                                <div class="handle">
-                                    <span>@RealMallamSaliu</span>
-                                    <span>.</span>
-                                    <span class="tweet-time">1h</span>
+                                <div class="">
+                                    <div class="name">
+                                        <b>SENATOR SALIU MUSTAPHA</b>
+                                        <div class="account-info-popup">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="my-profile-pics d-flex">
+                                                    <a href="#" class="">
+                                                        <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                    </a>
+                                                </div>
+                                                <div class="follow-button">
+                                                    <h6 class="follow-btn">Following</h6>
+                                                    <h6 class="unfollow-btn">Unfollow</h6>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                <div class="handle">@RealMallamSaliu</div>
+                                            </div>
+                                            <p class="">
+                                                Senator, Kwara Central,Turaki of Ilorin,
+                                                Businessman, Philanthropist and Father.
+                                            </p>
+                                            <div class="">
+                                                <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                <a href=""><b>10.2k </b><span>Followers</span></a>
+                                            </div>
+                                            <div class="d-flex mt-2 people-following">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="" style="font-size: 13px; display: inline;">
+                                                        Followed by Micheal Chibuzo,APC Nigeria,
+                                                        and 13 others you follow
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handle">
+                                        <span>
+                                            @RealMallamSaliu
+                                            <div class="account-info-popup">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="my-profile-pics d-flex">
+                                                        <a href="#" class="">
+                                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="follow-button">
+                                                        <h6 class="follow-btn">Following</h6>
+                                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                    <div class="handle">@RealMallamSaliu</div>
+                                                </div>
+                                                <p class="">
+                                                    Senator, Kwara Central,Turaki of Ilorin,
+                                                    Businessman, Philanthropist and Father.
+                                                </p>
+                                                <div class="">
+                                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                                </div>
+                                                <div class="d-flex mt-2 people-following">
+                                                    <a href="#">
+                                                        <div class="d-flex">
+                                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <p class="" style="font-size: 13px; display: inline;">
+                                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                                            and 13 others you follow
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span>.</span>
+                                        <span class="tweet-time">1h</span>
+                                    </div>
+                                </div>
+                                <div class="more-icon">
+                                    <img src="asset/images/svg/more-icon.svg" alt="">
+                                    <div class="nav-tooltip">More</div>
                                 </div>
                             </div>
                             <div class="tweet">
@@ -460,13 +1400,13 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="bookmart">
-                                        <div class="">
+                                    <div class="bookmart-container">
+                                        <div class="bookmart">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <div class="">
+                                    <div class="share-container">
+                                        <div class="share">
                                             <img src="asset/images/svg/share.svg" alt="">
                                         </div>
                                     </div>
@@ -475,18 +1415,178 @@
                         </div>
                     </div>
                     <div class="tweet-section d-flex">
-                        <div class="my-profile-pics d-flex">
+                        <div class="my-profile-pics my-profile d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
+                            </div>
+                            <div class="account-info-popup">
+                                <div class="d-flex justify-content-between">
+                                    <div class="my-profile-pics d-flex">
+                                        <a href="#" class="">
+                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                        </a>
+                                    </div>
+                                    <div class="follow-button">
+                                        <h6 class="follow-btn">Following</h6>
+                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                    <div class="handle">@RealMallamSaliu</div>
+                                </div>
+                                <p class="">
+                                    Senator, Kwara Central,Turaki of Ilorin,
+                                    Businessman, Philanthropist and Father.
+                                </p>
+                                <div class="">
+                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                </div>
+                                <div class="d-flex mt-2 people-following">
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="" style="font-size: 13px; display: inline;">
+                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                            and 13 others you follow
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="what-is-happening">
                             <div class="name-handle">
-                                <div class="name"><b>oseni rufai</b></div>
-                                <div class="handle">
-                                    <span>@ruffydfire</span>
-                                    <span>.</span>
-                                    <span class="tweet-time">4h</span>
+                                <div class="">
+                                    <div class="name">
+                                        <b>oseni rufai</b>
+                                        <div class="account-info-popup">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="my-profile-pics d-flex">
+                                                    <a href="#" class="">
+                                                        <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                    </a>
+                                                </div>
+                                                <div class="follow-button">
+                                                    <h6 class="follow-btn">Following</h6>
+                                                    <h6 class="unfollow-btn">Unfollow</h6>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                <div class="handle">@RealMallamSaliu</div>
+                                            </div>
+                                            <p class="">
+                                                Senator, Kwara Central,Turaki of Ilorin,
+                                                Businessman, Philanthropist and Father.
+                                            </p>
+                                            <div class="">
+                                                <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                <a href=""><b>10.2k </b><span>Followers</span></a>
+                                            </div>
+                                            <div class="d-flex mt-2 people-following">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="" style="font-size: 13px; display: inline;">
+                                                        Followed by Micheal Chibuzo,APC Nigeria,
+                                                        and 13 others you follow
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handle">
+                                        <span>
+                                            @ruffydfire
+                                            <div class="account-info-popup">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="my-profile-pics d-flex">
+                                                        <a href="#" class="">
+                                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="follow-button">
+                                                        <h6 class="follow-btn">Following</h6>
+                                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                    <div class="handle">@RealMallamSaliu</div>
+                                                </div>
+                                                <p class="">
+                                                    Senator, Kwara Central,Turaki of Ilorin,
+                                                    Businessman, Philanthropist and Father.
+                                                </p>
+                                                <div class="">
+                                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                                </div>
+                                                <div class="d-flex mt-2 people-following">
+                                                    <a href="#">
+                                                        <div class="d-flex">
+                                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <p class="" style="font-size: 13px; display: inline;">
+                                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                                            and 13 others you follow
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span>.</span>
+                                        <span class="tweet-time">4h</span>
+                                    </div>
+                                </div>
+                                <div class="more-icon">
+                                    <img src="asset/images/svg/more-icon.svg" alt="">
+                                    <div class="nav-tooltip">More</div>
                                 </div>
                             </div>
                             <div class="tweet">
@@ -522,13 +1622,13 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="bookmart">
-                                        <div class="">
+                                    <div class="bookmart-container">
+                                        <div class="bookmart">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <div class="">
+                                    <div class="share-container">
+                                        <div class="share">
                                             <img src="asset/images/svg/share.svg" alt="">
                                         </div>
                                     </div>
@@ -537,18 +1637,178 @@
                         </div>
                     </div>
                     <div class="tweet-section d-flex">
-                        <div class="my-profile-pics d-flex">
+                        <div class="my-profile-pics my-profile d-flex">
                             <div class="">
                                 <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
+                            </div>
+                            <div class="account-info-popup">
+                                <div class="d-flex justify-content-between">
+                                    <div class="my-profile-pics d-flex">
+                                        <a href="#" class="">
+                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                        </a>
+                                    </div>
+                                    <div class="follow-button">
+                                        <h6 class="follow-btn">Following</h6>
+                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                    <div class="handle">@RealMallamSaliu</div>
+                                </div>
+                                <p class="">
+                                    Senator, Kwara Central,Turaki of Ilorin,
+                                    Businessman, Philanthropist and Father.
+                                </p>
+                                <div class="">
+                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                </div>
+                                <div class="d-flex mt-2 people-following">
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                <a href="#" class="">
+                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="" style="font-size: 13px; display: inline;">
+                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                            and 13 others you follow
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="what-is-happening">
                             <div class="name-handle">
-                                <div class="name"><b>Erisco Food Limited</b></div>
-                                <div class="handle">
-                                    <span>@EriscoOfficial</span>
-                                    <span>.</span>
-                                    <span class="tweet-time">15h</span>
+                                <div class="">
+                                    <div class="name">
+                                        <b>Erisco Food Limited</b>
+                                        <div class="account-info-popup">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="my-profile-pics d-flex">
+                                                    <a href="#" class="">
+                                                        <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                    </a>
+                                                </div>
+                                                <div class="follow-button">
+                                                    <h6 class="follow-btn">Following</h6>
+                                                    <h6 class="unfollow-btn">Unfollow</h6>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                <div class="handle">@RealMallamSaliu</div>
+                                            </div>
+                                            <p class="">
+                                                Senator, Kwara Central,Turaki of Ilorin,
+                                                Businessman, Philanthropist and Father.
+                                            </p>
+                                            <div class="">
+                                                <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                <a href=""><b>10.2k </b><span>Followers</span></a>
+                                            </div>
+                                            <div class="d-flex mt-2 people-following">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                            <a href="#" class="">
+                                                                <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="" style="font-size: 13px; display: inline;">
+                                                        Followed by Micheal Chibuzo,APC Nigeria,
+                                                        and 13 others you follow
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handle">
+                                        <span>
+                                            @EriscoOfficial
+                                            <div class="account-info-popup">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="my-profile-pics d-flex">
+                                                        <a href="#" class="">
+                                                            <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 64px;">
+                                                        </a>
+                                                    </div>
+                                                    <div class="follow-button">
+                                                        <h6 class="follow-btn">Following</h6>
+                                                        <h6 class="unfollow-btn">Unfollow</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <a href="#"><b>SENATOR SALIU MUSTAPHA</b></a>
+                                                    <div class="handle">@RealMallamSaliu</div>
+                                                </div>
+                                                <p class="">
+                                                    Senator, Kwara Central,Turaki of Ilorin,
+                                                    Businessman, Philanthropist and Father.
+                                                </p>
+                                                <div class="">
+                                                    <a href="" class="me-2"><b>28 </b><span>Following</span></a>
+                                                    <a href=""><b>10.2k </b><span>Followers</span></a>
+                                                </div>
+                                                <div class="d-flex mt-2 people-following">
+                                                    <a href="#">
+                                                        <div class="d-flex">
+                                                            <div class="my-profile-pics d-flex" style="z-index: 3;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 2;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/channel-tv-logo.jpg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                            <div class="my-profile-pics d-flex" style="margin-left: -17px;z-index: 1;">
+                                                                <a href="#" class="">
+                                                                    <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 24px;">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <p class="" style="font-size: 13px; display: inline;">
+                                                            Followed by Micheal Chibuzo,APC Nigeria,
+                                                            and 13 others you follow
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span>.</span>
+                                        <span class="tweet-time">15h</span>
+                                    </div>
+                                </div>
+                                <div class="more-icon">
+                                    <img src="asset/images/svg/more-icon.svg" alt="">
+                                    <div class="nav-tooltip">More</div>
                                 </div>
                             </div>
                             <div class="tweet">
@@ -594,13 +1854,13 @@
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
-                                    <div class="bookmart">
-                                        <div class="">
+                                    <div class="bookmart-container">
+                                        <div class="bookmart">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <div class="">
+                                    <div class="share-container">
+                                        <div class="share">
                                             <img src="asset/images/svg/share.svg" alt="">
                                         </div>
                                     </div>
@@ -657,122 +1917,146 @@
                         <div class="twitter-trend">
                             <div class="trending-topics">
                                 <div class="trending-info">
-                                    <div class="">
-                                        <span>Politics</span>
-                                        <span>.</span>
-                                        <span>Trending</span>
+                                    <div class="trending">
+                                        <div class="">
+                                            <span>Politics</span>
+                                            <span>.</span>
+                                            <span>Trending</span>
+                                        </div>
+                                        <div class="more">
+                                            <img src="asset/images/svg/more-icon.svg" alt="">
+                                            <div class="nav-tooltip">More</div>
+                                        </div>
                                     </div>
                                     <h6>President Bola Tinubu</h6>
                                     <div class="">4,481 posts</div>
                                 </div>
-                                <div class="more">
-                                    <img src="asset/images/svg/more-icon.svg" alt="">
-                                </div>
                             </div>
                         </div>
                         <div class="twitter-trend">
                             <div class="trending-topics">
                                 <div class="trending-info">
-                                    <div class="">
-                                        <span>Music</span>
-                                        <span>.</span>
-                                        <span>Trending</span>
+                                    <div class="trending">
+                                        <div class="">
+                                            <span>Music</span>
+                                            <span>.</span>
+                                            <span>Trending</span>
+                                        </div>
+                                        <div class="more">
+                                            <img src="asset/images/svg/more-icon.svg" alt="">
+                                            <div class="nav-tooltip">More</div>
+                                        </div>
                                     </div>
                                     <h6>Davido</h6>
                                     <div class="">71.7k posts</div>
                                 </div>
-                                <div class="more">
-                                    <img src="asset/images/svg/more-icon.svg" alt="">
-                                </div>
                             </div>
                         </div>
                         <div class="twitter-trend">
                             <div class="trending-topics">
                                 <div class="trending-info">
-                                    <div class="">
-                                        <span>Food</span>
-                                        <span>.</span>
-                                        <span>Trending</span>
+                                    <div class="trending">
+                                        <div class="">
+                                            <span>Food</span>
+                                            <span>.</span>
+                                            <span>Trending</span>
+                                        </div>
+                                        <div class="more">
+                                            <img src="asset/images/svg/more-icon.svg" alt="">
+                                            <div class="nav-tooltip">More</div>
+                                        </div>
                                     </div>
                                     <h6>Indomie</h6>
                                     <div class="">5,080 posts</div>
                                 </div>
-                                <div class="more">
-                                    <img src="asset/images/svg/more-icon.svg" alt="">
-                                </div>
                             </div>
                         </div>
                         <div class="twitter-trend">
                             <div class="trending-topics">
                                 <div class="trending-info">
-                                    <div class="">
-                                        <span>Trending in Nigeria</span>
+                                    <div class="trending">
+                                        <div class="">
+                                            <span>Trending in Nigeria</span>
+                                        </div>
+                                        <div class="more">
+                                            <img src="asset/images/svg/more-icon.svg" alt="">
+                                            <div class="nav-tooltip">More</div>
+                                        </div>
                                     </div>
                                     <h6>Moses Bliss</h6>
                                     <div class="">1,381 posts</div>
                                 </div>
-                                <div class="more">
-                                    <img src="asset/images/svg/more-icon.svg" alt="">
-                                </div>
                             </div>
                         </div>
                         <div class="twitter-trend">
                             <div class="trending-topics">
                                 <div class="trending-info">
-                                    <div class="">
-                                        <span>Trending in Nigeria</span>
+                                    <div class="trending">
+                                        <div class="">
+                                            <span>Trending in Nigeria</span>
+                                        </div>
+                                        <div class="more">
+                                            <img src="asset/images/svg/more-icon.svg" alt="">
+                                            <div class="nav-tooltip">More</div>
+                                        </div>
                                     </div>
                                     <h6>INDUSTRY MACHINE</h6>
                                     <div class="">8,175 posts</div>
                                 </div>
-                                <div class="more">
-                                    <img src="asset/images/svg/more-icon.svg" alt="">
-                                </div>
                             </div>
                         </div>
                         <div class="twitter-trend">
                             <div class="trending-topics">
                                 <div class="trending-info">
-                                    <div class="">
-                                        <span>Trending in Nigeria</span>
+                                    <div class="trending">
+                                        <div class="">
+                                            <span>Trending in Nigeria</span>
+                                        </div>
+                                        <div class="more">
+                                            <img src="asset/images/svg/more-icon.svg" alt="">
+                                            <div class="nav-tooltip">More</div>
+                                        </div>
                                     </div>
                                     <h6>SAY NO TO CULTISM</h6>
                                     <div class="">12.2k posts</div>
                                 </div>
-                                <div class="more">
-                                    <img src="asset/images/svg/more-icon.svg" alt="">
-                                </div>
                             </div>
                         </div>
                         <div class="twitter-trend">
                             <div class="trending-topics">
                                 <div class="trending-info">
-                                    <div class="">
-                                        <span>Sports</span>
-                                        <span>.</span>
-                                        <span>Trending</span>
+                                    <div class="trending">
+                                        <div class="">
+                                            <span>Sports</span>
+                                            <span>.</span>
+                                            <span>Trending</span>
+                                        </div>
+                                        <div class="more">
+                                            <img src="asset/images/svg/more-icon.svg" alt="">
+                                            <div class="nav-tooltip">More</div>
+                                        </div>
                                     </div>
                                     <h6>Kai Cenat</h6>
                                     <div class="">51.9k posts</div>
                                 </div>
-                                <div class="more">
-                                    <img src="asset/images/svg/more-icon.svg" alt="">
-                                </div>
                             </div>
                         </div>
                         <div class="twitter-trend">
                             <div class="trending-topics">
                                 <div class="trending-info">
-                                    <div class="">
-                                        <span>Music</span>
-                                        <span>.</span>
-                                        <span>Trending</span>
+                                    <div class="trending">
+                                        <div class="">
+                                            <span>Music</span>
+                                            <span>.</span>
+                                            <span>Trending</span>
+                                        </div>
+                                        <div class="more">
+                                            <img src="asset/images/svg/more-icon.svg" alt="">
+                                            <div class="nav-tooltip">More</div>
+                                        </div>
                                     </div>
                                     <h6>Gilmore</h6>
                                     <div class="">13.5k posts</div>
-                                </div>
-                                <div class="more">
-                                    <img src="asset/images/svg/more-icon.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -917,5 +2201,125 @@
           </div>
         </div>
     </div>
+    <!-- .. -->
+    <div class="modal fade" id="reply" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 600px;">
+            <div class="modal-content">
+              <div class="header-modal">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h6 class="modal-title" id="exampleModalLabel">Draft</h6>
+              </div>
+              <!-- .. -->
+              <div class="tweet-section d-flex">
+                <div class="my-profile-pics my-profile d-flex">
+                    <a href="#" class="">
+                        <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
+                    </a>
+                    <div class="d-flex vertical-rule" style="height: 210px;">
+                        <div class="vr"></div>
+                    </div> 
+                </div>
+                <div class="what-is-happening">
+                    <div class="name-handle">
+                        <div class="">
+                            <div class="name">
+                                <b><a href="#">SENATOR SALIU MUSTAPHA</a></b>
+                            </div>
+                            <div class="handle">
+                                <span class="">
+                                    @RealMallamSaliu
+                                </span>
+                                <span>.</span>
+                                <span class="tweet-time">1h</span>
+                            </div>
+                        </div>
+                        <div class="more-icon">
+                        </div>
+                    </div>
+                    <div class="tweet">
+                        <p>
+                            I extend my warmest Ramadan greetings to the Muslim faithful across Kwara Central Senatorial District and all of Kwara State. 
+                        </p>
+                        <p class="pt-2">
+                            In this holy month, let's reflect on Ramadan's true essence: God-consciousness. May it inspire unity, kindness,
+                            & stronger family ties. bonds.
+                        </p>
+                        <p class="pt-2">
+                            #Ramadan pic.twitter.com/41PcuXMofi
+                        </p>
+                        <p>
+                            Replying to 
+                            <a href="#" class="text-primary" style="text-decoration: none;">
+                                @RealMallamSaliu
+                            </a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-reply">
+                <div class="my-profile-pics my-profile d-flex">
+                    <a href="#" class="">
+                        <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;">
+                    </a>
+                </div>
+                <div class="post-your-reply">
+                    <input type="text" placeholder="Post your reply">
+                </div>
+            </div>
+            <!-- .. -->
+            <div class="footer">
+                <div class=" d-flex col-12 justify-content-between">
+                      <div class="post-others d-flex">
+                          <div class="other-options">
+                              <img src="asset/images/svg/media.svg" alt="">
+                              <div class="nav-tooltip">Media</div>
+                          </div>
+                          <div class="other-options">
+                              <img src="asset/images/svg/gif.svg" alt="">
+                              <div class="nav-tooltip">GIF</div>
+                          </div>
+                          <div class="other-options">
+                              <img src="asset/images/svg/poll.svg" alt="">
+                              <div class="nav-tooltip">Poll</div>
+                          </div>
+                          <div class="other-options">
+                              <img src="asset/images/svg/emoji.svg" alt="">
+                              <div class="nav-tooltip">Emoji</div>
+                          </div>
+                          <div class="other-options">
+                              <img src="asset/images/svg/calender.svg" alt="">
+                              <div class="nav-tooltip">Schedule</div>
+                          </div>
+                          <div class="" disabled>
+                              <img src="asset/images/svg/location.svg" alt="" disabled>
+                          </div>
+                      </div>
+                      <div class="">
+                        <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Reply</button>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- views -->
+    <div class="modal fade" id="views" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="views-modal-content modal-content">
+            <div class="header-modal">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="views">
+                    <h3>Views</h3>
+                    <p>Times this post was seen. To learn more, visit the <a href="#"><b>Help Center</b></a></p>
+                    <div class="dismiss-btn">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Dismiss</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    <!-- views -->
 </body>
 </html>
