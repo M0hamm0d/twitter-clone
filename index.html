@@ -60,12 +60,12 @@
                         </div>
                         <div class="nav-tooltip">Profile</div>
                     </div>
-                    <div class="LOGO-COVER d-flex justify-content-center">
-                        <label for="more-icon-dropdown" class="logo-cover">
+                    <label for="more-icon-dropdown" class="LOGO-COVER d-flex justify-content-center">
+                        <div class="logo-cover">
                             <img src="asset/images/svg/more.svg" alt="">
                             <input type="checkbox" name="more-icon-dropdown" id="more-icon-dropdown">
                             <div class="more-icon-dropdown">
-                                <div class="d-flex">
+                                <div class="d-flex top">
                                     <div class="">
                                         <img src="asset/images/svg/twitter-logo.svg" alt="">
                                     </div>
@@ -99,18 +99,18 @@
                                     <div class="">
                                         <img src="asset/images/svg/ads.svg" alt="">
                                     </div>
-                                    <div class="">Ads</div>
+                                    <div class=""><b>Ads</b></div>
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex buttom">
                                     <div class="">
                                         <img src="asset/images/svg/timelime-setting.svg" alt="">
                                     </div>
                                     <div class=""><b>Settings and privacy</b></div>
                                 </div>
                             </div>
-                        </label>
+                        </div>
                         <div class="nav-tooltip">More</div>
-                    </div>
+                    </label>
                 </div>
                 <div class="LOGO-COVER post d-flex justify-content-center">
                     <button type="button" class="Logo-cover"  data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -119,11 +119,24 @@
                    <div class="nav-tooltip">Post</div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center">
+            <label for="account-dropdown" class="d-flex justify-content-center">
                 <div class="logo-cover">
                     <img src="asset/images/image/chris-coyier.jpeg" class="rounded-circle" alt="..." style="width: 40px;height: 40px;">
+                    <input type="checkbox" name="account-dropdown" id="account-dropdown">
+                    <div class="account-dropdown">
+                        <div class="d-flex">
+                            <div class="">
+                                <b><a href="#">Add an existing account</a></b>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="">
+                                <b><a href="#">Log out @MuhammadSalaami</a></b>
+                            </div>
+                        </div>
+                    </div>
                 </div> 
-            </div>
+            </label>
         </div>
         <!-- justify-content-between -->
         <div class="tweet-and-trend-container d-flex justify-content-between">
@@ -138,7 +151,7 @@
                             <a href="#" style="color: #536471">Following</a>
                         </div>
                         <div class="timelime-settings">
-                            <div class="timelime-setting">
+                            <div class="timelime-setting"  data-bs-toggle="modal" data-bs-target="#timeline-setting">
                                 <img style="width: 20px;height: 20px;" src="asset/images/svg/timelime-setting.svg" alt="">
                             </div>
                         </div>
@@ -1885,7 +1898,7 @@
                     <div class="premium-subscribe">
                         <h5>Subscribe to Premium</h5>
                         <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
-                        <a href="#" class="button">Subscribe</a>
+                        <a href="#" class="button"  data-bs-toggle="modal" data-bs-target="#subscribe">Subscribe</a>
                     </div>
                 </div>
                 <div class="twitter-live-section">
@@ -1923,10 +1936,25 @@
                                             <span>.</span>
                                             <span>Trending</span>
                                         </div>
-                                        <div class="more">
+                                        <label for="more-logo-dropdown" class="more">
                                             <img src="asset/images/svg/more-icon.svg" alt="">
+                                            <input type="checkbox" name="more-logo-dropdown" id="more-logo-dropdown">
+                                            <div class="more-logo-dropdown">
+                                                <div class="d-flex top">
+                                                    <div class="">
+                                                        <img src="asset/images/svg/not-interested.svg" alt="">
+                                                    </div>
+                                                    <div class=""><b>Not interested in this post</b></div>
+                                                </div>
+                                                <div class="d-flex buttom">
+                                                    <div class="">
+                                                        <img src="asset/images/svg/not-interested.svg" alt="">
+                                                    </div>
+                                                    <div class=""><b>This trend is harmful or spammy</b></div>
+                                                </div>
+                                            </div>
                                             <div class="nav-tooltip">More</div>
-                                        </div>
+                                        </label>
                                     </div>
                                     <h6>President Bola Tinubu</h6>
                                     <div class="">4,481 posts</div>
@@ -2202,6 +2230,48 @@
         </div>
     </div>
     <!-- .. -->
+    <div class="modal fade" id="timeline-setting" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content" style="height: 530px;">
+            <div class="header-modal">
+                <div class="d-flex  align-items-center">
+                    <button type="button" class="btn-close me-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <b>Timeline settings</b>
+                </div>
+                <div class="done-btn">
+                    <button type="button" class="" disabled data-bs-toggle="button">Reply</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="nothing">
+                    <h3>Nothing here yet</h3>
+                    <p>Try pinning a <a href="#">List</a> or a <a href="#">Community</a> to have easier access to your fovourite content.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    <!-- .. -->
+    <!-- views -->
+    <div class="modal fade" id="views" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="views-modal-content modal-content">
+            <div class="header-modal">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="views">
+                    <h3>Views</h3>
+                    <p>Times this post was seen. To learn more, visit the <a href="#"><b>Help Center</b></a></p>
+                    <div class="dismiss-btn">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Dismiss</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- views -->
     <div class="modal fade" id="reply" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" style="max-width: 600px;">
             <div class="modal-content">
@@ -2267,6 +2337,7 @@
                 </div>
             </div>
             <!-- .. -->
+            <!-- .. -->
             <div class="footer">
                 <div class=" d-flex col-12 justify-content-between">
                       <div class="post-others d-flex">
@@ -2302,8 +2373,57 @@
             </div>
         </div>
     </div>
+    <!-- .. -->
+    <!-- <div class="modal fade" id="timeline-setting" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="views-modal-content modal-content">
+            <div class="header-modal">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="nothing">
+                    <h3>Nothing here yet</h3>
+                    <p>Try pinning a <a href="#">List</a> or a <a href="#">Community</a> to have easier access to your fovourite content.</p>
+                    <div class="dismiss-btn">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Dismiss</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div> -->
+    <!-- .. -->
+    <div class="modal fade" id="subscribe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="views-modal-content modal-content">
+            <div class="header-modal">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="subscription">
+                    <h3>Who are you?</h3>
+                    <p class="text-center mb-0">Choose the right subscription for you</p>
+                    <div class="subscription-plan">
+                        <div class="individual">
+                            <p class="mb-1" style="font-size: 14px;">Premium</p>
+                            <h6 class="mb-1">I am an individual</h6>
+                            <p class="m-0" style="font-size: 13px;">For individuals and creators</p>
+                        </div>
+                        <div class="organization">
+                            <p class="mb-1" style="font-size: 14px;">Verified Organization</p>
+                            <h6 class="mb-1">I am an organization</h6>
+                            <p class="m-0" style="font-size: 13px;">For businesses, government agencies, and non-profits.</p>
+                        </div>
+                    </div>
+                    <div class="dismiss-btn">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal"><b>Subscribe</b></button>
+                    </div>
+                    <p class="learn-more">Learn more about  <a href="#">Premium</a> and <a href="#">Verified Organization</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
     <!-- views -->
-    <div class="modal fade" id="views" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="views" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="views-modal-content modal-content">
             <div class="header-modal">
@@ -2319,7 +2439,7 @@
                 </div>
             </div>
           </div>
-        </div>
+        </div> -->
     <!-- views -->
 </body>
 </html>
