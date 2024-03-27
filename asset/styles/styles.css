@@ -1,6 +1,12 @@
 .wrapper{
     display: flex;
 }
+.mobile-nav{
+    display: none;
+}
+.mobile-footer{
+    display: none;
+}
 .side-nav{
     display: flex;
     height: 100vh;
@@ -1019,13 +1025,32 @@ textarea{
     .wrapper{
         width: 100%;
     }
-    /* .tweet-and-trend-container{
-        max-width: 320px;
-        width: 100%;
+    .tweet-navigation{
+        display: none;
     }
-    .tweet-container{
-        max-width: 320px;
-    } */
+    .mobile-nav{
+        display: flex;
+        flex-direction: column;
+        background: hsl(0 100% 100% / 75%);
+        backdrop-filter: blur(50px);
+        border-bottom: 1px solid  rgba(239, 243, 244, 1.00);
+    }
+    .mobile-footer{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        bottom: 0px;
+        border-top: 1px solid  rgba(239, 243, 244, 1.00);
+        background-color: white;
+    }
+    .top-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px;
+    }
     .timelime-settings{
         display: none;
     }
