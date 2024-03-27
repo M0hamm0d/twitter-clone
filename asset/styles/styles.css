@@ -1039,6 +1039,7 @@ textarea{
         display: flex;
         justify-content: space-between;
         position: fixed;
+        padding: 2px 0px;
         width: 100%;
         z-index: 100;
         bottom: 0px;
