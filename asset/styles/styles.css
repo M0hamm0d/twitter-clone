@@ -1039,8 +1039,9 @@ textarea{
         display: flex;
         justify-content: space-between;
         position: fixed;
+        padding: 2px 0px;
         width: 100%;
-        z-index: 100;
+        z-index: 4;
         bottom: 0px;
         border-top: 1px solid  rgba(239, 243, 244, 1.00);
         background-color: white;
