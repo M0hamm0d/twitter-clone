@@ -288,7 +288,7 @@ textarea{
     position: relative;
 }
 .post-others>*:hover{
-    background-color: #1d98f0;
+    background-color: #E8F5FD;
 }
 .location-disabled:hover{
     background-color: white;
@@ -323,7 +323,7 @@ textarea{
     border-radius: 50%;
 }
 .name-handle .more-icon:hover{
-    background-color: #1d98f0;
+    background-color: #E8F5FD;
 }
 .name, .handle span{
     position: relative;
@@ -505,15 +505,29 @@ textarea{
     padding: 7px;
     z-index: 1;
 }
-.reactions  img:hover{
-    background-color: #e8f5fd;
-    color: beige;
+.react img:hover{
+    background-color: #E8F5FD;
     border-radius: 50%;
+}
+.reactions .repost img:hover{
+    background-color: #DEF1EB;
+}
+.like img:hover{
+    background-color: #F7E0EB;
 }
 .react:hover ~ .number{
     color: #1d98f0;
 }
-.reactions .repost-dropdown{
+.number span{
+    font-size: 14px;
+}
+.repost:hover ~ .number{
+    color: #15BF86;
+}
+.like:hover ~ .number{
+    color: #F84899;
+}
+.reactions .repost-dropdown, .repost-dropdown-2{
     display: none;
     flex-direction: column;
     position: absolute;
@@ -526,33 +540,33 @@ textarea{
     right: -20px;
     box-shadow: 0 0 15px rgba(101,119,134,0.2), 0 0 3px 1px rgba(101,119,134,0.15);
 }
-.repost-dropdown > div{
+.repost-dropdown > div, .repost-dropdown-2 > div{
     padding: 12px 16px;
 }
-.repost-dropdown > div:hover{
+.repost-dropdown > div:hover,.repost-dropdown-2 > div:hover{
     background-color: #F7F7F7;
 }
-.repost-dropdown img{
+.repost-dropdown img,.repost-dropdown-2 img{
     padding: 0;
     width: 23px;
     height: 23px;
     padding-right: 5px;
 }
-.repost-dropdown img:hover{
+.repost-dropdown img:hover, .repost-dropdown-2 img:hover{
     background-color: white;
 }
-.repost-dropdown .top{
+.repost-dropdown .top,.repost-dropdown-2 .top{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.repost-dropdown .buttom{
+.repost-dropdown .buttom, .repost-dropdown-2 .buttom{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-#repost-dropdown{
+#repost-dropdown, #repost-dropdown-2{
     display: none;
 }
-#repost-dropdown:checked ~ .repost-dropdown{
+#repost-dropdown:checked ~ .repost-dropdown, #repost-dropdown-2:checked ~ .repost-dropdown-2{
     display: flex;
 }
 .share-bookmart-section{
@@ -575,10 +589,10 @@ textarea{
 .share-container{
     position: relative;
 }
-#share-dropdown{
+#share-dropdown,#share-dropdown-1{
     display: none;
 }
-.share-container .share-dropdown{
+.share-container .share-dropdown,.share-dropdown-1{
     display: none;
     flex-direction: column;
     position: absolute;
@@ -591,30 +605,30 @@ textarea{
     right: 5px;
     box-shadow: 0 0 15px rgba(101,119,134,0.2), 0 0 3px 1px rgba(101,119,134,0.15);
 }
-.share-dropdown > div{
+.share-dropdown > div,.share-dropdown-1 > div{
     padding: 12px 16px;
 }
-.share-dropdown > div:hover{
+.share-dropdown > div:hover, .share-dropdown-1 > div:hover{
     background-color: #F7F7F7;
 }
-.share-dropdown img{
+.share-dropdown img,.share-dropdown img,.share-dropdown-1 img{
     padding: 0;
     width: 23px;
     height: 23px;
     padding-right: 5px;
 }
-.share-dropdown img:hover{
+.share-dropdown img:hover,.share-dropdown-1 img:hover{
     background-color: white;
 }
-.share-dropdown .top{
+.top{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.share-dropdown .buttom{
+.buttom{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-#share-dropdown:checked ~ .share-dropdown{
+#share-dropdown:checked ~ .share-dropdown,#share-dropdown-1:checked ~ .share-dropdown-1{
     display: flex;
 }
 .other-info{
@@ -786,7 +800,7 @@ textarea{
 } */
 .more:hover{
     border-radius: 50%;
-    background-color: blue;
+    background-color: #DAE8F0;
     transition: background-color .3s;
 }
 #more-logo-dropdown{
@@ -1045,6 +1059,11 @@ textarea{
         bottom: 0px;
         border-top: 1px solid  rgba(239, 243, 244, 1.00);
         background-color: white;
+    }
+    .mobile-tweet{
+        position: fixed;
+        bottom: 70px;
+        right: 25px;
     }
     .top-nav{
         display: flex;
