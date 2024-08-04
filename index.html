@@ -138,7 +138,6 @@
                 </div> 
             </label>
         </div>
-        <!-- justify-content-between -->
         <div class="tweet-and-trend-container d-flex justify-content-between">
             <div class="tweet-container d-flex">
                 <div class="d-flex flex-column">
@@ -201,6 +200,12 @@
                                 <img src="asset/images/svg/inbox.svg" alt="">
                             </div>
                             <div class="nav-tooltip">Inbox</div>
+                        </div>
+                        <div class="LOGO-COVER mobile-tweet post d-flex justify-content-center">
+                            <button type="button" class="Logo-cover"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="asset/images/svg/post.svg" alt="">
+                            </button>
+                           <div class="nav-tooltip">Post</div>
                         </div>
                     </div>
                     <div class="tweet-navigation sticky-top ">
@@ -506,7 +511,7 @@
                                 <div class="reaction-section">
                                     <div class="reactions">
                                         <div class="react" data-bs-toggle="modal" data-bs-target="#reply">
-                                            <img src="asset/images/svg/reply.svg" alt="" style="color: rgb(29, 155, 240);">
+                                            <img src="asset/images/svg/reply.svg" alt="">
                                         </div>
                                         <div class="d-flex number"><span>9</span></div>
                                     </div>
@@ -532,7 +537,7 @@
                                         <div class="number"><span>212</span></div>
                                     </label>
                                     <div class="reactions">
-                                        <div class="react">
+                                        <div class="react like">
                                             <img src="asset/images/svg/like.svg" alt="">
                                         </div>
                                         <div class="number"><span>56</span></div>
@@ -546,12 +551,12 @@
                                 </div>
                                 <div class="share-bookmart-section">
                                     <div class="bookmart-container">
-                                        <div class="bookmart">
+                                        <div class="bookmart react">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
                                     <label class="share-container" for="share-dropdown">
-                                        <div class="share">
+                                        <div class="share react">
                                             <img src="asset/images/svg/share.svg" alt="">
                                             <input type="checkbox" id="share-dropdown">
                                             <div class="share-dropdown">
@@ -765,28 +770,43 @@
                             <div class="reaction-container">
                                 <div class="reaction-section">
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#reply">
                                             <img src="asset/images/svg/reply.svg" alt="">
                                         </div>
-                                        <div class="d-flex"><span>9</span></div>
+                                        <div class="d-flex number"><span>9</span></div>
                                     </div>
-                                    <div class="reactions">
-                                        <div class="">
+                                    <label class="reactions" for="repost-dropdown-2">
+                                        <div class="repost react">
                                             <img src="asset/images/svg/repost.svg" alt="">
+                                            <input type="checkbox" id="repost-dropdown-2">
+                                            <div class="repost-dropdown-2">
+                                                <div class="d-flex top">
+                                                    <div class="">
+                                                        <img src="asset/images/svg/repost.svg" alt="" class="">
+                                                    </div>
+                                                    <div class=""><b>Repost</b></div>
+                                                </div>
+                                                <div class="d-flex buttom">
+                                                    <div class="">
+                                                        <img src="asset/images/svg/quoute.svg" alt="">
+                                                    </div>
+                                                    <div class=""><b>Quoute</b></div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class=""><span>212</span></div>
-                                    </div>
+                                        <div class="number"><span>212</span></div>
+                                    </label>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react like">
                                             <img src="asset/images/svg/like.svg" alt="">
                                         </div>
-                                        <div class=""><span>56</span></div>
+                                        <div class="number"><span>56</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#views">
                                             <img src="asset/images/svg/view.svg" alt="">
                                         </div>
-                                        <div class=""><span>325</span></div>
+                                        <div class="number"><span>432</span></div>
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
@@ -795,11 +815,37 @@
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="share-container">
+                                    <!-- <div class="share-container">
                                         <div class="share">
                                             <img src="asset/images/svg/share.svg" alt="">
                                         </div>
-                                    </div>
+                                    </div> -->
+                                    <label class="share-container" for="share-dropdown-1">
+                                        <div class="share react">
+                                            <img src="asset/images/svg/share.svg" alt="">
+                                            <input type="checkbox" id="share-dropdown-1">
+                                            <div class="share-dropdown-1">
+                                                <div class="d-flex top">
+                                                    <div class="">
+                                                        <img src="asset/images/svg/copy.svg" alt="">
+                                                    </div>
+                                                    <div class=""><b>Copy link</b></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <div class="">
+                                                        <img src="asset/images/svg/share.svg" alt="">
+                                                    </div>
+                                                    <div class=""><b>Share post via ...</b></div>
+                                                </div>
+                                                <div class="d-flex buttom">
+                                                    <div class="">
+                                                        <img src="asset/images/svg/direct-message.svg" alt="">
+                                                    </div>
+                                                    <div class=""><b>Send via Direct Message</b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
                                 </div> 
                             </div>
                         </div>
@@ -990,38 +1036,38 @@
                             <div class="reaction-container">
                                 <div class="reaction-section">
                                     <div class="reactions">
-                                        <div class="react">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#reply">
                                             <img src="asset/images/svg/reply.svg" alt="">
                                         </div>
-                                        <div class="d-flex"><span>345</span></div>
+                                        <div class="d-flex number"><span>345</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react repost">
                                             <img src="asset/images/svg/repost.svg" alt="">
                                         </div>
-                                        <div class=""><span>562</span></div>
+                                        <div class="number"><span>562</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react like">
                                             <img src="asset/images/svg/like.svg" alt="">
                                         </div>
-                                        <div class=""><span>710</span></div>
+                                        <div class="number"><span>710</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#views">
                                             <img src="asset/images/svg/view.svg" alt="">
                                         </div>
-                                        <div class=""><span>10k</span></div>
+                                        <div class="number"><span>10k</span></div>
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
                                     <div class="bookmart-container">
-                                        <div class="bookmart">
+                                        <div class="bookmart react">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="share-container">
-                                        <div class="share">
+                                        <div class="share react">
                                             <img src="asset/images/svg/share.svg" alt="">
                                         </div>
                                     </div>
@@ -1214,10 +1260,10 @@
                             <div class="reaction-container">
                                 <div class="reaction-section">
                                     <div class="reactions">
-                                        <div class="react">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#reply">
                                             <img src="asset/images/svg/reply.svg" alt="">
                                         </div>
-                                        <div class="d-flex"><span>282</span></div>
+                                        <div class="d-flex number"><span>282</span></div>
                                     </div>
                                     <div class="reactions">
                                         <div class="">
@@ -1232,10 +1278,10 @@
                                         <div class=""><span>1.3k</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#views">
                                             <img src="asset/images/svg/view.svg" alt="">
                                         </div>
-                                        <div class=""><span>56k</span></div>
+                                        <div class="number"><span>325</span></div>
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
@@ -1446,38 +1492,38 @@
                             <div class="reaction-container">
                                 <div class="reaction-section">
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#reply">
                                             <img src="asset/images/svg/reply.svg" alt="">
                                         </div>
-                                        <div class="d-flex"><span>9</span></div>
+                                        <div class="d-flex number"><span>93</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react repost">
                                             <img src="asset/images/svg/repost.svg" alt="">
                                         </div>
-                                        <div class=""><span>212</span></div>
+                                        <div class="number"><span>212</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react like">
                                             <img src="asset/images/svg/like.svg" alt="">
                                         </div>
-                                        <div class=""><span>56</span></div>
+                                        <div class="number"><span>56</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#views">
                                             <img src="asset/images/svg/view.svg" alt="">
                                         </div>
-                                        <div class=""><span>325</span></div>
+                                        <div class="number"><span>325</span></div>
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
                                     <div class="bookmart-container">
-                                        <div class="bookmart">
+                                        <div class="bookmart react">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="share-container">
-                                        <div class="share">
+                                        <div class="share react">
                                             <img src="asset/images/svg/share.svg" alt="">
                                         </div>
                                     </div>
@@ -1668,38 +1714,38 @@
                             <div class="reaction-container">
                                 <div class="reaction-section">
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#reply">
                                             <img src="asset/images/svg/reply.svg" alt="">
                                         </div>
-                                        <div class=""><span>167</span></div>
+                                        <div class="d-flex number"><span>167</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react repost">
                                             <img src="asset/images/svg/repost.svg" alt="">
                                         </div>
-                                        <div class=""><span>78</span></div>
+                                        <div class="number"><span>78</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react like">
                                             <img src="asset/images/svg/like.svg" alt="">
                                         </div>
-                                        <div class=""><span>638</span></div>
+                                        <div class="number"><span>638</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#views">
                                             <img src="asset/images/svg/view.svg" alt="">
                                         </div>
-                                        <div class=""><span>64k</span></div>
+                                        <div class="number"><span>64k</span></div>
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
                                     <div class="bookmart-container">
-                                        <div class="bookmart">
+                                        <div class="bookmart react">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="share-container">
-                                        <div class="share">
+                                        <div class="share react">
                                             <img src="asset/images/svg/share.svg" alt="">
                                         </div>
                                     </div>
@@ -1900,38 +1946,38 @@
                             <div class="reaction-container">
                                 <div class="reaction-section">
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#reply">
                                             <img src="asset/images/svg/reply.svg" alt="">
                                         </div>
-                                        <div class="d-flex"><span>780</span></div>
+                                        <div class="d-flex number"><span>780</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react repost">
                                             <img src="asset/images/svg/repost.svg" alt="">
                                         </div>
-                                        <div class=""><span>363</span></div>
+                                        <div class="number"><span>363</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react like">
                                             <img src="asset/images/svg/like.svg" alt="">
                                         </div>
-                                        <div class=""><span>454</span></div>
+                                        <div class="number"><span>454</span></div>
                                     </div>
                                     <div class="reactions">
-                                        <div class="">
+                                        <div class="react" data-bs-toggle="modal" data-bs-target="#views">
                                             <img src="asset/images/svg/view.svg" alt="">
                                         </div>
-                                        <div class=""><span>45k</span></div>
+                                        <div class="number"><span>45k</span></div>
                                     </div>
                                 </div>
                                 <div class="share-bookmart-section">
                                     <div class="bookmart-container">
-                                        <div class="bookmart">
+                                        <div class="bookmart react">
                                             <img src="asset/images/svg/bookmart.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="share-container">
-                                        <div class="share">
+                                        <div class="share react">
                                             <img src="asset/images/svg/share.svg" alt="">
                                         </div>
                                     </div>
