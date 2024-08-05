@@ -177,7 +177,7 @@ nav a:hover{
     padding: 30px 40px 20px;
     height: 100%;
 }
-.si-modal-title button{
+.email-btn, .password-btn, .si-log-in{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -186,6 +186,10 @@ nav a:hover{
     color: white;
     padding: 4px 6px 8px;
     border-radius: 6px;
+    transition: 150ms;
+}
+.email-btn label, .password-btn label, .si-log-in label{
+    transition: 100ms;
 }
 .si-modal-body button input{
     height: 20px;
@@ -198,6 +202,9 @@ nav a:hover{
 }
 .password-btn{
     margin: 30px 0 0;
+}
+.email-err, .password-err{
+    color: red;
 }
 .password{
     display: flex;
@@ -212,6 +219,12 @@ nav a:hover{
     height: 18px;
     margin-top: 4px;
 }
+.eye-hide{
+    display: none;
+};
+.eye-see{
+    display: flex;
+}
 .forgot-password{
     color: #1A8CD8;
 }
@@ -223,13 +236,13 @@ nav a:hover{
     align-items: center;
     background-color: RGB(215, 219, 220);
     border-radius: 60px;
-    margin-top: 130px;
+    margin-top: 100px;
 }
 .si-log-in:hover{
     background-color: #D7DBDC;
 }
 .no-account{
-    margin-top: 25px;
+    margin-top: 15px;
 }
 .no-account span{
     color: #1A8CD8;
@@ -238,10 +251,10 @@ nav a:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-
 .wrapper{
     display: flex;
     display: none;
+    transition: 200ms;
 }
 .mobile-nav{
     display: none;

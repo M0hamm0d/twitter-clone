@@ -91,7 +91,7 @@
             <a href="#"><span>©️ 2024 X Corp.</span></a>
         </nav>
     </div>
-    <div class="sign-in-modal">
+    <div class="sign-in-modal" onclick="change()">
         <div class="si-modal-title">
             <button class="abs" title="close">×</button>
             <div class="header">
@@ -101,17 +101,20 @@
                 <h3>
                     Enter your password
                 </h3>
-                <button class="email-btn">
+                <button class="email-btn" onclick="changeBack1()">
                     <label for="email">Phone,email, username</label>
-                    <input type="text">
+                    <input type="text" class="email-input">
                 </button>
-                <button class="password-btn">
+                <p class="email-err"></p>
+                <button class="password-btn" onclick="changeBack2()">
                     <label for="email">Password</label>
                     <div class="password">
-                        <input type="password">
-                        <img src="asset/images/svg/eye-see.svg" alt="" style="fill: white;">
+                        <input type="password" class="password-input">
+                        <img onclick="see()" class="eye-see" src="asset/images/svg/eye-see.svg" alt="" style="fill: white;">
+                        <img onclick="see()" class="eye-hide" src="asset/images/svg/eye-unsee.jpg" alt="" style="fill: white;">
                     </div>
                 </button>
+                <p class="password-err"></p>
                 <p class="forgot-password">
                     Forgot Password?
                 </p>
