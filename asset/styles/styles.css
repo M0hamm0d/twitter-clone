@@ -120,9 +120,11 @@ body{
     border: 1px solid #2F3336;
     color: #1d98f0;
 }
+
 .sign-in:hover{
     background-color: #031018;
 }
+
 nav{
     font-size: 14px;
     display: flex;
@@ -135,11 +137,12 @@ nav a{
     color: #717171;
     text-decoration: none;
 }
+
 nav a:hover{
     text-decoration: underline;
 }
 
-.sign-in-modal{
+.sign-in-modal, .create-acc-modal{
     position: absolute;
     background-color: rgba(91, 112, 131, 0.4);
     inset: 0 0 0 0;
@@ -165,7 +168,7 @@ nav a:hover{
 .header img{
     width: 30px;
 }
-.si-modal-title .abs{
+.si-modal-title .abs, .si-modal-title .absolute{
     position: absolute;
     background-color: transparent;
     border: none;
@@ -177,7 +180,7 @@ nav a:hover{
     padding: 30px 40px 20px;
     height: 100%;
 }
-.email-btn, .password-btn, .si-log-in{
+.email-btn, .password-btn, .si-log-in, .su-sign-up, .input{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -187,6 +190,9 @@ nav a:hover{
     padding: 4px 6px 8px;
     border-radius: 6px;
     transition: 150ms;
+}
+.input{
+    margin-top: 20px;
 }
 .email-btn label, .password-btn label, .si-log-in label{
     transition: 100ms;
@@ -228,7 +234,7 @@ nav a:hover{
 .forgot-password{
     color: #1A8CD8;
 }
-.si-modal-title .si-log-in{
+.si-modal-title .si-log-in, .su-sign-up{
     font-weight: 700;
     color: black;
     padding: 12px;
@@ -236,9 +242,11 @@ nav a:hover{
     align-items: center;
     background-color: RGB(215, 219, 220);
     border-radius: 60px;
+}
+.si-log-in{
     margin-top: 100px;
 }
-.si-log-in:hover{
+.si-log-in:hover, .si-sign-up:hover{
     background-color: #D7DBDC;
 }
 .no-account{

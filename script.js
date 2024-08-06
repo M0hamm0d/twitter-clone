@@ -3,6 +3,7 @@ let signInBtn = document.querySelector('.sign-in');
 let signUpSection = document.querySelector('.sign-up-section')
 let signInModal = document.querySelector('.sign-in-modal');
 let cancelBtn = document.querySelector('.abs');
+let closeBtn = document.querySelector('.absolute');
 let emailBtn = document.querySelector('.email-btn');
 let passwordBtn = document.querySelector('.password-btn');
 let siModalBody = document.querySelector('.si-modal-body');
@@ -15,7 +16,26 @@ const incorrectPassword = document.querySelector('.password-err');
 const incorrectEmail = document.querySelector('.email-err');
 let clickToSee = document.querySelector('.eye-see');
 let clickToHide = document.querySelector('.eye-hide');
-
+const createAccModal = document.querySelector('.create-acc-modal');
+const createAccBtn = document.querySelector('.create-acc');
+const nameInput = document.querySelector('.name-input');
+const suEmailInput = document.querySelector('.email-Input');
+const phoneInput = document.querySelector('.phone-input');
+const suPasswordInput = document.querySelector('.su-password-input')
+const suSignUp = document.querySelector('.su-sign-up')
+suSignUp.addEventListener('click', function(){
+    if(passwordInput.value!= '' && suEmailInput.value!='', nameInput.value!='', phoneInput.value!=''){
+        bankAccountUser.push({
+            fullName: nameInput.value,
+            password: Number(suPasswordInput.value),
+            phoneNumber: phoneInput.value,
+            email: suEmailInput.value
+        })
+    }
+    createAccModal.style.display = ''
+   console.log(bankAccountUser);
+   
+})
 
 let account1 = {
     fullName: 'Muhammad Abdussalam',
@@ -23,10 +43,10 @@ let account1 = {
     phoneNumber: '+2348136208750',
     email: 'masalami042@gmail.com'
 }
-let bankAccountUser = [account1]
+let bankAccountUser = [account1];
 
 function createUserName(bankAccount){
-    bankAccountUser
+    bankAccount
     .forEach(acc => {
         acc.username = acc.fullName
         .toLowerCase()
@@ -36,6 +56,7 @@ function createUserName(bankAccount){
     })
 };
 createUserName(bankAccountUser);
+console.log(bankAccountUser);
 
 function change(){
     signInModal.addEventListener('click', ()=>{
@@ -62,8 +83,21 @@ signInBtn.addEventListener('click', ()=>{
     signUpSection.style.overflow = 'hidden';
     signUpSection.style.height = '100vh'
 });
+
+createAccBtn.addEventListener('click', ()=>{
+    createAccModal.style.display = 'flex';
+    signUpSection.style.overflow = 'hidden';
+    signUpSection.style.height = '100vh'
+});
+
 cancelBtn.addEventListener('click', ()=>{
     signInModal.style.display = '';
+    createAccModal.style.display = '';
+    signUpSection.style.overflow = '';
+    signUpSection.style.height = ''
+});
+closeBtn.addEventListener('click', ()=>{
+    createAccModal.style.display = '';
     signUpSection.style.overflow = '';
     signUpSection.style.height = ''
 });
@@ -71,9 +105,12 @@ let searchByEmail;
 let searchByUserName;
 let searchByPhone;
 siLogIn.addEventListener('click', ()=>{
-    searchByUserName = bankAccountUser.find(acc => acc.username===emailInput.value);
-    searchByPhone = bankAccountUser.find(acc => acc.phoneNumber===emailInput.value);
-    searchByEmail = bankAccountUser.find(acc => acc.email===emailInput.value);
+    createUserName(bankAccountUser);
+    console.log(bankAccountUser);
+    
+    searchByUserName = bankAccountUser.find(acc => acc.username==emailInput.value);
+    searchByPhone = bankAccountUser.find(acc => acc.phoneNumber==emailInput.value);
+    searchByEmail = bankAccountUser.find(acc => acc.email==emailInput.value);
     if(searchByPhone?.password=== Number(passwordInput.value)){
         wrapper.style.display = 'flex';
         signInModal.style.display = 'none'
