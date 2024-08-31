@@ -23,11 +23,40 @@ const suEmailInput = document.querySelector(".email-Input");
 const phoneInput = document.querySelector(".phone-input");
 const suPasswordInput = document.querySelector(".su-password-input");
 const suSignUp = document.querySelector(".su-sign-up");
+const passErr = document.querySelector(".pass-err");
+const phoneErr = document.querySelector(".phone-error");
+let emailErr = document.querySelector(".email-error");
+let nameErr = document.querySelector(".name-error");
+const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
 suSignUp.addEventListener("click", function () {
+  if (suPasswordInput.value == "") {
+    passErr.textContent = "password is required";
+    console.log(suPasswordInput.value.length);
+  }
+  if (phoneInput.value == "") {
+    phoneErr.textContent = "phone input is required";
+  }
+  if (suEmailInput.value == "") {
+    emailErr.textContent = "email is required";
+  }
+  if (nameInput.value == "") {
+    nameErr.textContent = "name is required";
+  }
+  if (emailInput !== "" && regex.test(suEmailInput.value) == false) {
+    emailErr.textContent = "kindly enter a valid email";
+    console.log(suPasswordInput.value.length);
+  }
+  if (suPasswordInput.value !== "" && suPasswordInput.value.length < 4) {
+    passErr.textContent = "kindly enter a minimum of four character";
+  }
   if (
-    (passwordInput.value != "" && suEmailInput.value != "",
-    nameInput.value != "",
-    phoneInput.value != "")
+    suPasswordInput.value !== "" &&
+    suEmailInput.value !== "" &&
+    nameInput.value !== "" &&
+    phoneInput.value !== "" &&
+    regex.test(suEmailInput.value) &&
+    suPasswordInput.value.length >= 4
   ) {
     user1.push({
       fullName: nameInput.value,
@@ -35,9 +64,12 @@ suSignUp.addEventListener("click", function () {
       phoneNumber: phoneInput.value,
       email: suEmailInput.value,
     });
+    createAccModal.style.display = "";
+    suPasswordInput.value !== "";
+    suEmailInput.value == "";
+    nameInput.value == "";
+    phoneInput.value == "";
   }
-  createAccModal.style.display = "";
-  //console.log(user1);
 });
 
 let account1 = {
@@ -92,19 +124,30 @@ createAccBtn.addEventListener("click", () => {
 });
 
 cancelBtn.addEventListener("click", () => {
-  signInModal.style.display = "";
-  createAccModal.style.display = "";
-  signUpSection.style.overflow = "";
-  signUpSection.style.height = "";
+  closeButtons();
 });
 closeBtn.addEventListener("click", () => {
-  createAccModal.style.display = "";
-  signUpSection.style.overflow = "";
-  signUpSection.style.height = "";
+  closeButtons();
 });
 let searchByEmail;
 let searchByUserName;
 let searchByPhone;
+
+function closeButtons() {
+  createAccModal.style.display = "";
+  signUpSection.style.overflow = "";
+  signUpSection.style.height = "";
+  nameErr.textContent = "";
+  emailErr.textContent = "";
+  passErr.textContent = "";
+  phoneErr.textContent = "";
+  incorrectEmail.textContent = "";
+  //closebutton
+  signInModal.style.display = "";
+  createAccModal.style.display = "";
+  signUpSection.style.overflow = "";
+  signUpSection.style.height = "";
+}
 
 function correctDetails() {
   wrapper.style.display = "flex";
