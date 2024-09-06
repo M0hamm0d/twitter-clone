@@ -32,7 +32,6 @@ const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 suSignUp.addEventListener("click", function () {
   if (suPasswordInput.value == "") {
     passErr.textContent = "password is required";
-    console.log(suPasswordInput.value.length);
   }
   if (phoneInput.value == "") {
     phoneErr.textContent = "phone input is required";
@@ -45,11 +44,11 @@ suSignUp.addEventListener("click", function () {
   }
   if (emailInput !== "" && regex.test(suEmailInput.value) == false) {
     emailErr.textContent = "kindly enter a valid email";
-    console.log(suPasswordInput.value.length);
   }
   if (suPasswordInput.value !== "" && suPasswordInput.value.length < 4) {
     passErr.textContent = "kindly enter a minimum of four character";
   }
+  // {}
   if (
     suPasswordInput.value !== "" &&
     suEmailInput.value !== "" &&
@@ -65,13 +64,8 @@ suSignUp.addEventListener("click", function () {
       email: suEmailInput.value,
     });
     createAccModal.style.display = "";
-    suPasswordInput.value !== "";
-    suEmailInput.value == "";
-    nameInput.value == "";
-    phoneInput.value == "";
   }
 });
-
 let account1 = {
   fullName: "Muhammad Abdussalam",
   password: 1034,
