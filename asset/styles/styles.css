@@ -277,7 +277,7 @@ nav a:hover {
 }
 .wrapper {
   display: flex;
-  display: none;
+  /* display: none; */
   transition: 200ms;
 }
 .mobile-nav {
